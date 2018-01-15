@@ -1,0 +1,17 @@
+<div class="no-scroll">
+    <form [formGroup]="myForm" (ngSubmit)="pushpage(myForm.value)">
+      <p style="padding-top: 10px; color: #5F5F5F;">अपना OTP दर्ज करें</p>
+      <ion-item class="text-center">
+        <input type="number" placeholder="OTP" name="otpno" [formControl]="myForm.controls['otpno']" style="background: transparent;
+    border: none;" />
+      </ion-item>
+      <p style="padding:20px;padding-top:10px;padding-bottom:10px;font-size: 10px;">
+        <input type="checkbox" name="checkbox" id="agree" [formControl]="myForm.controls['checkbox']" /> मैं नियमों और शर्तों से सहमत हु
+      </p>
+      <button ion-button type="submit" [disabled]="!myForm.valid" clear><img src="assets/register/Register_button.png" alt="" style="max-width: 100%;"></button>
+      <p class="note" style="text-align:center !important; font-size:14px !important;"><a href="" style="color:#095C9B">नियम एवं शर्तें</a></p>
+    </form>
+</div>
+  
+ 
+

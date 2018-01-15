@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-searchbar [(ngModel)]="autocomplete.query" [showCancelButton]="true" (ionInput)="updateSearch()" (ionCancel)="dismiss()"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-fab right bottom *ngIf="trfe">
+    <button ion-fab color="primary"  (click)="presentPrompt1()">Save</button>
+  </ion-fab>
+  <ion-list>
+    <ion-item *ngFor="let item of autocompleteItems" tappable (click)="chooseItem(item)">
+      {{ item }}
+    </ion-item>
+  </ion-list>
+  <div #map id="map" style="height:100%;"><span class="smallPanel" id="label"></span></div>
+</ion-content>

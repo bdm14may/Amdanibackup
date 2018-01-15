@@ -1,0 +1,38 @@
+[
+    {
+    "id": 3,
+    "name": "Akkalkuwa",
+    "code": 3950,
+    "districtCode": 497
+    },
+    {
+    "id": 4,
+    "name": "Akrani",
+    "code": 3951,
+    "districtCode": 497
+    },
+    {
+    "id": 5,
+    "name": "Talode",
+    "code": 3952,
+    "districtCode": 497
+    },
+    {
+    "id": 6,
+    "name": "Shahade",
+    "code": 3953,
+    "districtCode": 497
+    },
+    {
+    "id": 7,
+    "name": "Nandurbar",
+    "code": 3954,
+    "districtCode": 497
+    },
+    {
+    "id": 8,
+    "name": "Nawapur",
+    "code": 3955,
+    "districtCode": 497
+    }
+    ]

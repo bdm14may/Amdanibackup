@@ -1,0 +1,36 @@
+<ion-content class="no-scroll" padding>
+    <ion-slides>
+        <ion-slide>
+            <ion-row style="margin-top:15%;" *ngIf="trfe">
+                <ion-col col-1>
+                </ion-col>
+                <ion-col class="register" text-center col-10>
+                    <h5 class="register-text">{{trfe.registration}}</h5>
+                    <mobile (onRegister)="register($event)" [valueToPass]="gphoneno"></mobile>
+                </ion-col>
+                <ion-col col-1>
+                </ion-col>
+            </ion-row>
+        </ion-slide>
+        <ion-slide>
+            <ion-row style="margin-top:15%;" *ngIf="trfe">
+                <ion-col col-1>
+                </ion-col>
+                <ion-col class="register" text-center col-10>
+                    <h5 class="register-text">{{trfe.registration}}</h5>
+                    <otp (onPush)="pushotp($event)" [Otpnumbers]="numbers"></otp>
+                </ion-col>
+                <ion-col col-1>
+                </ion-col>
+            </ion-row>
+        </ion-slide>
+    </ion-slides>
+</ion-content>
+<!--<ion-content>
+<ol>
+<li *ngFor="let campaign of (registered1 | async)">
+{{campaign.name}}<button (click)="deleteitem(campaign)">delete</button>
+</li>
+</ol>
+</ion-content>-->
+

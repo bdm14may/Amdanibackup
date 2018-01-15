@@ -1,0 +1,45 @@
+<ion-content padding>
+    <ion-row *ngIf="trfe">
+        <ion-col class="mid-bg" col-12>
+            <h1 style="margin-top:10px; color:#095C9B !important;">{{trfe.select_crop}}</h1>
+            <ion-row *ngIf="ecrope">
+                <ion-col col-1></ion-col>
+                <ion-slides slidesPerView="4"  >
+                    <ion-slide *ngFor="let v of ecrope; let i=index " >
+                        <ion-col col-2  (click)="selectcrope(v,i)" [class.selected]="seli==i">
+                            <img src="assets/register/{{v.Name | uppercase}}.png" alt=""><br> {{v.Name}}
+                        </ion-col>
+                    </ion-slide>
+                </ion-slides>
+                <ion-col col-1></ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col col-3>
+                    <ion-label>{{trfe.variety}}</ion-label>
+                    <ion-select class="select-box" [(ngModel)]="Variety" (ngModelChange)="updateSelectedValue2($event)">
+                        <ion-option *ngFor="let tal of variety" [value]="tal">{{tal.Value}}</ion-option>
+                    </ion-select>
+                </ion-col>
+                <ion-col col-3>
+                    <ion-label>{{trfe.Irrigation_type}}</ion-label>
+                    <ion-select class="select-box" [(ngModel)]="Irrigation">
+                        <ion-option *ngFor="let tal of irrigation" [value]="tal">{{tal.Value}}</ion-option>
+                    </ion-select>
+                </ion-col>
+     
+                    <ion-col col-3>
+                            <ion-label>{{trfe.Types_of_soil}}</ion-label>
+                            <ion-select class="select-box" [(ngModel)]="Soil">
+                                <ion-option *ngFor="let tal1 of soil" [value]="tal1">{{tal1.Value}}</ion-option>
+                            </ion-select>
+                        </ion-col>
+
+                <ion-col col-3>
+                    <ion-label>{{trfe.sowing_date}}</ion-label>
+                    <input type="date" class="select-md select-icon select-box1 " min="2016-12-31" max="2018-12-31" value="{{myDate}}"  [(ngModel)]="myDate">
+                </ion-col>
+            </ion-row>
+            <button ion-button [disabled]="(!Variety || !cropevalue) || !Irrigation " (click)="pushpage()" style="margin-top:5px;" clear><img src="assets/register/Done_02.png" alt="" style="max-width: 50%;"></button>
+        </ion-col>
+    </ion-row>
+</ion-content>

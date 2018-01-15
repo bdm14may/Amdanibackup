@@ -1,0 +1,63 @@
+<ion-content padding>
+    <!--   <button (click)="dismiss()" style="float:right; background: transparent;color:red;font-size: 20px;">
+<ion-icon ios="ios-close" md="md-close"></ion-icon>
+</button> -->
+    <ion-row *ngIf="trfe">
+        <ion-col class="mid-bg" col-11>
+            <h1 style="margin-top:10%; color:#095C9B !important;">{{trfe.crop_details}}</h1>
+            <ion-grid>
+                <ion-row class="row-head" >
+                    <ion-col col-2>
+                        {{trfe.crop_name}}
+                    </ion-col>
+                    <ion-col col-2>
+                        {{trfe.variety}}
+                    </ion-col>
+                    <ion-col col-2>
+                        {{trfe.plot_name}}
+                   
+                   
+                    </ion-col>
+                    <ion-col col-2>
+                       {{trfe.sowing_date}}
+                    </ion-col>
+                    <ion-col col-2>
+                    </ion-col>
+                </ion-row>
+                <ion-row *ngFor="let crop of trf;let i=index;">
+                    <ion-col class="col-border" col-2>
+                        {{crop.Crop_name}}
+                    </ion-col>
+                    <ion-col class="col-border" col-2>
+                        {{crop.Variety_Name}}
+                    </ion-col>
+                    <ion-col class="col-border" col-2>
+                        
+                        <span> {{crop.Plot_District}}</span>
+                        <br>
+                        <span>{{crop.Map_name}}</span>
+                    </ion-col>
+                    <ion-col class="col-border" col-2>
+                        {{crop.Sowing_date | amLocal | amDateFormat: 'YYYY-MM-DD'}}
+                    </ion-col>
+                    <ion-col class="col-border" col-2>
+                        <button ion-button class="view-btn" style="margin-top:5px;" (click)="gotoscreen(crop,i)" clear>
+                            <b>{{trfe.See}}</b>
+                        </button>
+                    </ion-col>
+                    <ion-col class="col-border" col-2>
+                        <button ion-button class="view-btn" style="margin-top:5px;" (click)="editsowing(crop,i)" clear>
+                            <b>{{trfe.update}}</b>
+                        </button>
+                        <br>
+                        <button ion-button class="view-btn" style="margin-top:5px;" (click)="delete(crop,i)" clear>
+                            <b> {{trfe.delete}} </b>
+                            </button>
+                    </ion-col>
+                </ion-row>
+                <button class="add-button2" ion-button round outline (click)="dismiss()">{{trfe.Dismiss}}</button>
+            </ion-grid>
+        </ion-col>
+    </ion-row>
+
+</ion-content>

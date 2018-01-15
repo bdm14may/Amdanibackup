@@ -1,0 +1,58 @@
+<ion-content padding>
+    <!--   <button (click)="dismiss()" style="float:right; background: transparent;color:red;font-size: 20px;">
+<ion-icon ios="ios-close" md="md-close"></ion-icon>
+</button> -->
+    <ion-row>
+        <ion-col class="mid-bg" col-11>
+            <h1 style="margin-top:10%; color:#095C9B !important;">फसल विवरण</h1>
+            <ion-grid>
+                <ion-row class="row-head">
+                    <ion-col col-2>
+                        फ़सल
+                    </ion-col>
+                    <ion-col col-2>
+                        वैराइटी
+                    </ion-col>
+                    <ion-col col-2>
+                        फसल ज़मीन का नाम
+                    </ion-col>
+                    <ion-col col-2>
+                        बुवाई की तारीख
+                    </ion-col>
+                    <ion-col col-2>
+                    </ion-col>
+                </ion-row>
+                <ion-row *ngFor="let crop of trf;let i=index;">
+                    <ion-col class="col-border" col-2>
+                        {{crop.Crop_name}}
+                    </ion-col>
+                    <ion-col class="col-border" col-2>
+                        {{crop.Variety_Name}}
+                    </ion-col>
+                    <ion-col class="col-border" col-2>
+                        {{crop.Map_name}}
+                    </ion-col>
+                    <ion-col class="col-border" col-2>
+                        {{crop.Sowing_date | amLocal | amDateFormat: 'YYYY-MM-DD'}}
+                    </ion-col>
+                    <ion-col class="col-border" col-2>
+                        <button ion-button class="view-btn" style="margin-top:5px;" (click)="gotoscreen(crop,i)" clear>
+                            <b> देखे</b>
+                        </button>
+                    </ion-col>
+                    <ion-col class="col-border" col-2>
+                        <button ion-button class="view-btn" style="margin-top:5px;" (click)="editsowing(crop,i)" clear>
+                            <b>संपादित करें</b>
+                        </button>
+                        <br>
+                        <button ion-button class="view-btn" style="margin-top:5px;" (click)="delete(crop,i)" clear>
+                            <b> हटाए </b>
+                            </button>
+                    </ion-col>
+                </ion-row>
+                <button class="add-button2" ion-button round outline (click)="dismiss()">खारिज</button>
+            </ion-grid>
+        </ion-col>
+    </ion-row>
+
+</ion-content>

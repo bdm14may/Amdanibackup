@@ -1,0 +1,722 @@
+[
+    {
+        "id": 196,
+        "name": "Manibeli",
+        "code": 525002,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 197,
+        "name": "Dhankhedi",
+        "code": 525003,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 198,
+        "name": "Chimalkhadi",
+        "code": 525004,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 199,
+        "name": "Sinduri",
+        "code": 525005,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 200,
+        "name": "Bamani",
+        "code": 525006,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 201,
+        "name": "Danel",
+        "code": 525007,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 202,
+        "name": "Mukhadi",
+        "code": 525008,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 203,
+        "name": "Gaman",
+        "code": 525009,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 204,
+        "name": "Jangathi",
+        "code": 525010,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 205,
+        "name": "Arethi",
+        "code": 525011,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 206,
+        "name": "Kukadipadar",
+        "code": 525012,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 207,
+        "name": "Kewadi",
+        "code": 525013,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 208,
+        "name": "Barisugas",
+        "code": 525014,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 209,
+        "name": "Pimpalkhuta",
+        "code": 525015,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 210,
+        "name": "Surgas",
+        "code": 525016,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 211,
+        "name": "Khodasbara",
+        "code": 525017,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 212,
+        "name": "Jugalkhet",
+        "code": 525018,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 213,
+        "name": "Balaghat",
+        "code": 525019,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 214,
+        "name": "Bardi",
+        "code": 525020,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 215,
+        "name": "Mokas",
+        "code": 525021,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 216,
+        "name": "Pandhramati",
+        "code": 525022,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 217,
+        "name": "Chapadi",
+        "code": 525023,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 218,
+        "name": "Wadfali (R)",
+        "code": 525024,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 219,
+        "name": "Movan",
+        "code": 525025,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 220,
+        "name": "Bagda",
+        "code": 525026,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 221,
+        "name": "Morhi",
+        "code": 525027,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 222,
+        "name": "Vehgi",
+        "code": 525028,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 223,
+        "name": "Dhebramal",
+        "code": 525029,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 224,
+        "name": "Sambar",
+        "code": 525030,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 225,
+        "name": "Palaskhobra",
+        "code": 525031,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 226,
+        "name": "Mandawa",
+        "code": 525032,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 227,
+        "name": "Kanjala",
+        "code": 525033,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 228,
+        "name": "Welkhadi",
+        "code": 525034,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 229,
+        "name": "Veri",
+        "code": 525035,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 230,
+        "name": "Chanwai",
+        "code": 525036,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 231,
+        "name": "Malpada",
+        "code": 525037,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 232,
+        "name": "Bhagdari",
+        "code": 525038,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 233,
+        "name": "Olpada ",
+        "code": 525039,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 234,
+        "name": "Bijaligavhan",
+        "code": 525040,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 235,
+        "name": "Kanjani",
+        "code": 525041,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 236,
+        "name": "Bijaripati",
+        "code": 525042,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 237,
+        "name": "Molgi",
+        "code": 525043,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 238,
+        "name": "Ukhalipada ",
+        "code": 525044,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 239,
+        "name": "Sorchapada ",
+        "code": 525045,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 240,
+        "name": "Kathi",
+        "code": 525046,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 241,
+        "name": "Bhangrapani",
+        "code": 525047,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 242,
+        "name": "Pimprapani",
+        "code": 525048,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 243,
+        "name": "Pimpti",
+        "code": 525049,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 244,
+        "name": "Umati",
+        "code": 525050,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 245,
+        "name": "Jamali (ka)",
+        "code": 525051,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 246,
+        "name": "Bokhadi",
+        "code": 525052,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 247,
+        "name": "Bedakund",
+        "code": 525053,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 248,
+        "name": "Bharkund",
+        "code": 525054,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 249,
+        "name": "Sallibar",
+        "code": 525055,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 250,
+        "name": "Veli",
+        "code": 525056,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 251,
+        "name": "Gadwani",
+        "code": 525057,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 252,
+        "name": "Urmalamal",
+        "code": 525058,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 253,
+        "name": "Chivalutar",
+        "code": 525059,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 254,
+        "name": "Ambaribar",
+        "code": 525060,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 255,
+        "name": "Khuntagavhan",
+        "code": 525061,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 256,
+        "name": "Jamana",
+        "code": 525062,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 257,
+        "name": "Patbara",
+        "code": 525063,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 258,
+        "name": "Umaragavhan",
+        "code": 525064,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 259,
+        "name": "Orpa",
+        "code": 525065,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 260,
+        "name": "Nendwan Kh",
+        "code": 525066,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 261,
+        "name": "Nendwan Bk",
+        "code": 525067,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 262,
+        "name": "Khurchimal",
+        "code": 525068,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 263,
+        "name": "Mal",
+        "code": 525069,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 264,
+        "name": "Hunakhamb",
+        "code": 525070,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 265,
+        "name": "Khodi",
+        "code": 525071,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 266,
+        "name": "Sari",
+        "code": 525072,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 267,
+        "name": "Junwani",
+        "code": 525073,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 268,
+        "name": "Sakliumar",
+        "code": 525074,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 269,
+        "name": "Wadibar",
+        "code": 525075,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 270,
+        "name": "Walamba (k)",
+        "code": 525076,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 271,
+        "name": "Dahel",
+        "code": 525077,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 272,
+        "name": "Mogra",
+        "code": 525078,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 273,
+        "name": "Oghani",
+        "code": 525079,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 274,
+        "name": "Chikhali",
+        "code": 525080,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 275,
+        "name": "Walamba (R)",
+        "code": 525081,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 276,
+        "name": "Nimbapati",
+        "code": 525082,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 277,
+        "name": "Horafali",
+        "code": 525083,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 278,
+        "name": "Beti",
+        "code": 525084,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 279,
+        "name": "Morkhi",
+        "code": 525085,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 280,
+        "name": "Thana",
+        "code": 525086,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 281,
+        "name": "Khadakapani",
+        "code": 525087,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 282,
+        "name": "Odhi",
+        "code": 525088,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 283,
+        "name": "Kothali",
+        "code": 525089,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 284,
+        "name": "Kataskhai",
+        "code": 525090,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 285,
+        "name": "Ohwa",
+        "code": 525091,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 286,
+        "name": "Todikund",
+        "code": 525092,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 287,
+        "name": "Dab",
+        "code": 525093,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 288,
+        "name": "Khai",
+        "code": 525094,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 289,
+        "name": "Kuwa",
+        "code": 525095,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 290,
+        "name": "Kolavimal",
+        "code": 525096,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 291,
+        "name": "Kankalamal",
+        "code": 525097,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 292,
+        "name": "Bharadipadar",
+        "code": 525098,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 293,
+        "name": "Darasarapadar",
+        "code": 525099,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 294,
+        "name": "Ukhalsag",
+        "code": 525100,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 295,
+        "name": "Ambabari",
+        "code": 525101,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 296,
+        "name": "Ratanbara",
+        "code": 525102,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 297,
+        "name": "Rojkund",
+        "code": 525103,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 298,
+        "name": "Moramba",
+        "code": 525104,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 299,
+        "name": "Rampur",
+        "code": 525105,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 300,
+        "name": "Shendvan",
+        "code": 525106,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 301,
+        "name": "Talamba",
+        "code": 525107,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 302,
+        "name": "Mahukhadi",
+        "code": 525108,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 303,
+        "name": "Jambipani",
+        "code": 525109,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 304,
+        "name": "Ranzani",
+        "code": 525110,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 305,
+        "name": "Raisingpur",
+        "code": 525111,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 306,
+        "name": "Ghunsi",
+        "code": 525112,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 307,
+        "name": "Vadali",
+        "code": 525113,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 308,
+        "name": "Lalpur",
+        "code": 525114,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 309,
+        "name": "Kakadkhunt",
+        "code": 525115,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 310,
+        "name": "Mahupada",
+        "code": 525116,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 311,
+        "name": "Khadkuna",
+        "code": 525117,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 312,
+        "name": "Kakdiamba",
+        "code": 525118,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 313,
+        "name": "Gavhali",
+        "code": 525119,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 314,
+        "name": "Dodwa",
+        "code": 525120,
+        "tehsilCode": 3950
+    },
+    {
+        "id": 315,
+        "name": "Nawapada",
+        "code": 525121,
+        "tehsilCode": 3950
+    }
+]

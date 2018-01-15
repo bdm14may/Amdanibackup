@@ -1,0 +1,52 @@
+<ion-content padding>
+    <ion-row>
+        <ion-col class="mid-bg" col-11>
+            <h1 style="margin-top:20px; color:white !important;">फसल की जमीन का मौसम </h1>
+            <ion-row style="margin-top: 0px;" *ngFor="let value2 of weatherinfo1" >
+                <ion-col col-1></ion-col>
+                <ion-slides  slidesPerView="4">
+                    <ion-slide *ngFor="let value3 of value2.time_segments;let j=index;">
+                        <ion-row style="margin-top: 0px;">
+                            {{value3.temperature}}
+                            <button class="add-button2" ion-button  [ngClass]="{'add-button1':showblue==j}" (click)="showinfo(value3,j)" clear>{{value3.iso8601 | amDateFormat: 'MMM Do'}}</button>
+                        </ion-row>
+                    </ion-slide>
+                </ion-slides>
+            </ion-row>
+            <!-- <span *ngIf="tempfg" style="margin-top: 0; font-size: 20px;">{{tempfg.iso8601  | amDateFormat:'MMMM Do YYYY'}}</span> -->
+            <ion-row>
+                <ion-col col-5>
+                    <!-- <span>
+<p style="text-align: left; margin-left: 8px;font-size: 14px;" *ngIf="placeinfo">
+{{placeinfo.subLocality}}
+{{placeinfo.locality}},<br>
+{{placeinfo.subAdministrativeArea}},<br>
+{{placeinfo.administrativeArea}}<br>
+</p>
+</span> -->
+                    <br>
+                    <br> <br>
+                    <span *ngIf="tempfg" style="text-align: left;margin-left: -50px;font-size: 30px;">{{tempfg.high_temp}} /{{tempfg.low_temp}} °C</span>
+                </ion-col>
+                <ion-col col-3>
+                    <span *ngIf="tempfg">
+                        <img src="http://www.myforecast.com/img/icons/{{tempfg.icon}}.png" alt="" style="width: 100%;float: left;margin-left: -20px;">
+                    </span>
+                </ion-col>
+                <ion-col col-4>
+                    <br>
+                    <span>
+                        <p *ngIf="tempfg" style="text-align: left; margin-left:0px;margin-top: 0;margin-bottom: 0;font-size: 15px;" >
+                            <br> नमी: {{tempfg.humidity}} % 
+                        </p>
+                        <p *ngIf="tempfg" style="text-align: left; margin-left:0px;margin-top: 0;margin-bottom: 0;font-size: 15px;" >
+                            <br> हवा: {{tempfg.wind_speed}} km/h
+                        </p>
+                    </span>
+                </ion-col>
+                <button ion-button round  class="add-button2" (click)="dismiss()" style="width:28% !important;margin-left:35%;">खारिज</button>
+            </ion-row>
+            <br/>
+        </ion-col>
+    </ion-row>
+</ion-content>

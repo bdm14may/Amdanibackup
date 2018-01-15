@@ -1,0 +1,54 @@
+page-plotdetails {
+
+
+    ion-content{
+       // background: url(../assets/register/landscape.png) no-repeat center center fixed;
+       // background-size: cover;
+        color: #5F5F5F !important;
+    }
+
+    .content-md {
+        color: #000;
+        background-color: transparent;
+    }
+    .add-button2 {
+        background: url(../assets/register/weather_orange_button.png) no-repeat;
+        background-size: 100% 100%;
+        width: 28%;
+        font-size: 12px;
+        color: white;
+    }
+
+    .mid-bg{
+        background: url(../assets/register/user_profile_bg.png) no-repeat;
+        background-size: 100% 100%;
+        height: 100%;
+        padding: 8%;
+        padding-top: 30px;
+        margin-left: 5%;
+    }
+    ion-col{
+        text-align: center;
+    }
+    .col-border{
+        text-align: center;
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    .row-head{
+        background: #4A3925;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        color: #b39f88;
+    }
+    .button-md {
+        border-radius: 2px;
+        overflow: hidden;
+        height: 3.6rem;
+    }
+    .view-btn{
+        height:2rem;
+        padding: 0;
+    }
+}

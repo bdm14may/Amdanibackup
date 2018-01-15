@@ -1,0 +1,44 @@
+<ion-content padding>
+    <!--  <button (click)="dismiss1()" style="float:right; background: transparent;color: white;font-size: 20px;">
+<ion-icon ios="ios-close" md="md-close"></ion-icon>
+</button>-->
+    <ion-row *ngIf="trfe">
+        <ion-col col-1></ion-col>
+        <ion-col class="mid-bg" col-10>
+            <h4 style="margin-top:8px; color:#095C9B !important;text-align:center;font-size: 17px;">{{displayvalue.Growth}} ({{(showingDate | amFromUnix) | amAdd: displayvalue.DAP : 'days'| amDateFormat:'MMM Do YYYY'}}) <br> </h4>
+            <!--  <ion-item style="width:50%;background: transparent;">
+<ion-label style="color:#402F1A;">Quantity:</ion-label>
+<ion-input style="color:#402F1A;" value="500 KG" ></ion-input>
+</ion-item>-->
+<span *ngIf="displayvalue.Growth">
+            <p style="margin-top: 0;font-size:14px;">{{trfe.next_intervention}}<span style="border:1px solid black;padding: 3px;background-color:white;">  {{(showingDate | amFromUnix) | amAdd: value1.DAP : 'days'| amDateFormat:'MMM Do'}} </span><br><br> {{value2.Growth}} {{trfe.Plannedon}} </p><br />
+            <p  *ngIf="showbtn!='null' && showbtn==1"><b>{{trfe.completing_the_activity}}</b></p>
+        </span>
+        <span *ngIf="!displayvalue.Growth">
+            No activity 
+        </span>
+            <ion-row>
+                <ion-col col-2>
+                    <button ion button (click)="startspeech(displayvalue.Growth)" style="margin-left:0px;" clear><img src="assets/register/Sound_btn.png" alt=""></button>
+                </ion-col>
+                <ion-col col-1>
+                </ion-col>
+                <ion-col col-4 *ngIf="dh=='null'">
+                    <button [disabled]="showbtn==0" class="add-button2" ion button style="margin-left:0px;margin-left: -20px;" (click)="dismiss(1)" clear><b> {{trfe.done}} </b></button>
+                </ion-col>
+                <ion-col col-5 *ngIf="dh=='null'">
+                    <button [disabled]="showbtn==1" class="add-button2" (click)="dismiss(0)" ion button clear><b>{{trfe.not_done}}</b></button>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col col-2></ion-col>
+                <ion-col col-4>
+                    <button ion button clear> <img src="assets/icon/YouTube.png" alt="" style="width: 50%;"> </button>
+                </ion-col>
+                <ion-col col-4>
+                    <button class="add-button2" (click)="dismiss1()" ion-button>{{trfe.Dismiss}}</button>
+                </ion-col>
+            </ion-row>
+        </ion-col>
+    </ion-row>
+</ion-content>

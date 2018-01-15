@@ -1,0 +1,124 @@
+<ion-content padding>
+    <ion-row style="margin-top:10%;">
+        <ion-col col-1>
+        </ion-col>  
+        <ion-col class="register" text-center col-10 *ngIf="trfe"> 
+            <div *ngIf="registered =='true'">
+                <form #form="ngForm">
+                    <h5 class="register-text" style="margin-top: 30%!important;">{{trfe.Congratulations}}</h5>
+                    <p style="color: #5F5F5F;padding: 54px;padding-bottom: 0;padding-top: 0px;">{{trfe.registered_successfully}}</p>
+                    <ion-item class="text-center">
+                        <ion-input placeholder="Enter your name" type="text" [(ngModel)]="name.name" id="name" name="name" [ngModelOptions]="{standalone: true}" style=" color: #5F5F5F;" required></ion-input>
+                    </ion-item><br>
+                    <ion-item>
+                     <ion-select class="select-box" [(ngModel)]="language" [ngModelOptions]="{standalone: true}">
+                            <ion-option *ngFor="let vil of language1" [value]="vil.name" >{{vil.name}}</ion-option>
+                        </ion-select> 
+                    </ion-item>
+                 
+                    <!-- <ion-item class="text-center" style="height: 100px !important;">
+                         <button ion-button full (click)="presentActionSheet()" style="height: 2.6rem !important;">Choose Image</button> 
+                        <br/>
+                     
+   <!-- <button ion-button color="secondary" full icon-left (click)="uploadImage()" [hidden]="lastImage === null" style="height: 2.6rem !important;">
+                            upload Image
+                        </button> 
+                    </ion-item> -->
+                    <button ion-button type="submit" (click)="register()" [disabled]="(name.name===null)"  style="margin-top: 15px;" clear><img src="assets/register/next_button.png" alt="" style="max-width: 50%;"></button>
+                </form>
+            </div> 
+            <div  *ngIf="registered =='false'">
+                <h5 class="register-text">{{trfe.my_profile}}</h5>
+                <span *ngFor='let vehicle of registered3 | async'>
+                    <img *ngIf="imageUrl" width="80" height="80"  src="http://139.59.56.87/brahamdev/upload/{{imageUrl}}" />
+                    <img *ngIf="!imageUrl" width="80" height="80"  src="assets/avtar.png" />
+                </span>
+                <span *ngFor='let vehicle of registered3 | async'>
+                    <ion-row>
+                        <ion-col style="text-align:right;" col-3 offset-1>{{trfe.name}}:</ion-col>
+                        <ion-col style="text-align: left;" col-8 >{{name.name}}</ion-col>
+                    </ion-row> 
+                </span>
+                <ion-row >
+                    <ion-col class="cat" col-3 offset-1>{{trfe.village}}:</ion-col>
+                    <ion-col style="text-align: left;" *ngIf="placeinfo" col-8>    
+                        <!-- <ion-select class="select-box" [(ngModel)]="gender3">
+                            <ion-option *ngFor="let vil of vil" [value]="vil" >{{vil.name}}</ion-option>
+                        </ion-select> -->
+                        <span style="width:74%;">
+                            <ion-input placeholder="Enter your Village name" type="text" [(ngModel)]="genderer" id="name" name="name" value={{placeinfo.subLocality?placeinfo.subLocality:placeinfo.subLocality}} [ngModelOptions]="{standalone: true}" style=" color: #5F5F5F;width:74%;margin-top: -5%;background: white;" required></ion-input>
+                        </span>
+                        
+                    </ion-col>
+                </ion-row>
+                <ion-row >
+                    <ion-col class="cat" col-3 offset-1>{{trfe.Taluka}}:</ion-col>
+                    <ion-col style="text-align: left;" *ngIf="placeinfo" col-8>   
+                        <!-- <ion-select class="select-box" [(ngModel)]="gender2" (ngModelChange)="updateSelectedValue2($event)">
+                            <ion-option *ngFor="let tal of tal" [value]="tal" >{{tal.name}}</ion-option>
+                        </ion-select> -->
+                        {{placeinfo.locality?placeinfo.locality:placeinfo.subAdministrativeArea}}
+                         
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col class="cat" col-3 offset-1>{{trfe.district}}:</ion-col>
+                    <ion-col style="text-align: left;" col-8 *ngIf="placeinfo"> 
+                           
+                            {{placeinfo.subAdministrativeArea}}
+                              
+                        <!-- <ion-select class="select-box" [(ngModel)]="gender1" (ngModelChange)="updateSelectedValue1($event)">
+                            <ion-option *ngFor="let dist of dist" [value]="dist" >{{dist.name}}</ion-option>
+                        </ion-select> -->
+                    </ion-col>
+                </ion-row> 
+                <ion-row>
+                    <ion-col class="cat" col-3 offset-1>{{trfe.state}}:</ion-col>
+                    <ion-col style="text-align: left;" *ngIf="placeinfo" col-8> 
+                        <!-- <ion-select class="select-box" [(ngModel)]="state" (ngModelChange)="updateSelectedValue($event)">
+                            <ion-option *ngFor="let key of statevalue" [value]="key" >{{key.name}}</ion-option>
+                        </ion-select> -->
+                        {{placeinfo.administrativeArea}}
+                    </ion-col> 
+                </ion-row>   
+                <button ion-button style="margin-top: 10px;" [disabled]="!genderer" (click)="pushpage()" clear>
+                    <img src="assets/register/continue_button.png" style="max-width: 50%;">
+                </button>
+            </div>
+        </ion-col>
+        <ion-col col-1>
+        </ion-col> 
+    </ion-row>
+</ion-content>
+<!--
+<style>
+#viewport {
+width: 100vw;
+height: 100vh;
+position: relative;
+background-color: #000;
+overflow: hidden;
+}
+
+.wrapper {
+position: absolute;
+left: 0;
+right: 0;
+top: 50%;
+margin-top: -80px;
+}
+
+.wrapper > img {
+width: 100%;
+display: block;
+height: auto;
+}
+</style>
+<ion-content>
+
+<div id="viewport">
+<div class="wrapper">
+<img src="https://mobkits.github.io/pinch-zoom/one.jpg" alt="">
+</div>
+</div>
+</ion-content>-->

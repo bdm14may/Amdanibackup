@@ -1,0 +1,48 @@
+<ion-content>
+    <!-- <button (click)="dismiss()" style="float:right; background: transparent;color: white;font-size: 20px;">
+<ion-icon ios="ios-close" md="md-close" style="font-size: 2.2em;
+color: red;"></ion-icon>
+</button>   -->
+    <ion-row >
+        <ion-col col-12>
+            <h1 style="margin-top:20px; "></h1>
+            <span *ngIf="tempfg" style="margin-top: 0; font-size: 20px;">
+                <ion-row>
+                    <ion-col  col-12 *ngIf="trfe">
+                        <h1 style="margin-top:10px; color:white !important;">{{trfe.plot_details}}</h1>
+                        <ion-row style="margin-top: 0px;"  >
+                            <ion-col col-1></ion-col>
+                            <ion-slides  slidesPerView="4">
+                                <ion-slide *ngFor="let value2 of trf;let j=index;">
+                                    <ion-row style="margin-top: 0px;">
+                                        <button class="add-button2" ion-button  [ngClass]="{'add-button1':showblue==j}" (click)="showinfo(value2,j)" clear>{{value2.Map_name}}</button>
+                                    </ion-row>
+                                </ion-slide>
+                            </ion-slides>
+                        </ion-row>
+                        <ion-grid>
+                            <ion-row *ngIf="trfe">
+                                <ion-col class="col-border" col-3 style="font-size: 16px;">
+                                    <b>{{trfe.crop_name}}</b>  <br> {{tempfg.Crop_name}}
+                                </ion-col>
+                                <ion-col class="col-border" col-3 style="font-size: 16px;">
+                                    <b>{{trfe.variety_name}}</b>  <br>  {{tempfg.Variety_Name}}
+                                </ion-col>
+                                <ion-col class="col-border" col-3 style="font-size: 16px;">
+                                    <b>{{trfe.map_name}}</b> <br> {{tempfg.Map_name}}
+                                </ion-col>
+                                <ion-col class="col-border" col-3 style="font-size: 16px;">
+                                    <b>{{trfe.sowing_date}}</b>  <br> {{tempfg.Sowing_date | amLocal | amDateFormat: 'YYYY-MM-DD'}}
+                                </ion-col> 
+                            </ion-row>  
+                        </ion-grid>
+                    </ion-col>
+                    <ion-col class="col-border" *ngIf="trfe">
+                        <button ion-button round  class="add-button2" style="width:20% !important;" (click)="gotoscreen(tempfg)">{{trfe.See}}</button>
+                        <button ion-button round  class="add-button2" style="width: 20% !important;" (click)="dismiss()">{{trfe.Dismiss}}</button>
+                    </ion-col>
+                </ion-row>
+            </span>
+        </ion-col>
+    </ion-row>
+</ion-content>

@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\components\\mobile",
+    "\\src\\pages",
+    "\\src\\pages\\cropdetails",
+    "\\src\\pages\\home",
+    "\\src\\pages\\pesticides",
+    "\\src\\pages\\plotdetails",
+    "\\src\\pages\\suggest",
+    "\\src\\pages\\userweather"
+  ],
+  "PreviewInSolutionExplorer": false
+}

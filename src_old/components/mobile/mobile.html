@@ -1,0 +1,15 @@
+<div class="no-scroll">
+  <form  (ngSubmit)="register(valueToPass)">
+    <p style="margin-top: 0;color: #5F5F5F;">अपना मोबाइल नंबर दर्ज करें</p>
+    <ion-item class="text-center">
+      <input 
+      type="tel"
+     
+        [(ngModel)]="valueToPass"  placeholder="Mobile number"   name="mobileno"   style="background: transparent;
+    border: none;"  required (ngModelChange)="change($event)" />
+    {{valueToPass}}
+    </ion-item><br>
+    <button ion-button type="submit" [disabled]="!valueToPass"  clear><img src="assets/register/next_button.png" alt="" style="max-width: 100%;"></button>
+    <p class="note">नोट: एक ओटीपी (वन टाइम पासवर्ड) आपके नंबर पर भेजा जाएगा। कृपया स्क्रीन पर दिए गए स्थान में OTP दर्ज करें।</p>
+  </form>
+</div>

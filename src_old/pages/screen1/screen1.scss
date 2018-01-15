@@ -1,0 +1,352 @@
+page-screen1 {
+    ion-content {
+        color: #5F5F5F !important;
+        /*   box-shadow: inset 0 0 0 500px rgba(36, 70, 105, 0.3);*/
+        //box-shadow: inset 0 0 0 500px rgba(0, 62, 62, 0.3);
+    }
+
+
+    .header-md::after,
+    .tabs-md[tabsPlacement="top"] > .tabbar::after,
+    .footer-md::before,
+    .tabs-md[tabsPlacement="bottom"] > .tabbar::before {
+        position: fixed;
+    }
+    .colorred {
+        color: red;
+    }
+    .img-radius {
+        border: 2px solid red;
+        border-radius: 25px;
+    }
+    .colorred1 {
+        color: red;
+    }
+    .button-md {
+        border-radius: 2px;
+        overflow: hidden;
+        height: 4.6rem !important;
+    }
+
+    .head-crop {
+        margin-top: 2px;
+        background: url(../assets/register/Crop_icon_bg.png) no-repeat;
+        background-size: 90% 66%;
+    }
+
+    .head-qty {
+        margin-top: 2px;
+        background: url(../assets/register/Crop_Patch.png) no-repeat;
+        background-size: 90% 66%;
+    }
+    .head-qty-old {
+        margin-top: 2px;
+        background: url(../assets/register/Crop_Patch_old.png) no-repeat;
+        background-size: 90% 66%;
+    }
+
+    .head-qty1 {
+        margin-top: 2px;
+        background: url(../assets/coin1.png) no-repeat;
+        background-size: 100% 66%;
+    }
+
+
+    .head-weather {
+        margin-top: 2px;
+        background: url(../assets/register/weather_icon_bg.png) no-repeat;
+        background-size: 90% 60%;
+    }
+
+    .text-head {
+        color: white;
+        margin-top: 10px;
+    }
+
+    .text-head1 {
+        margin-left: 4%;
+        color: white;
+        margin-top: 10px;
+    }
+
+    .tostr {
+        top: 60% !important;
+        opacity: .7 !important;
+    }
+    .toast-md .toast-message {
+        font-size: 1.5rem;
+        color: #fff;
+        padding: 31px 51px 15px;
+        background: url(../assets/home/cloud.png) no-repeat !important;
+        background-size: 50% 100% !important;
+        text-align: center;
+        padding-left: 0%;
+    }
+
+    .toast-md .toast-wrapper.toast-middle {
+        opacity: .8 !important;
+        top: 60% !important;
+        background: transparent;
+    }
+
+    .footer-design {
+        background: url(../assets/register/01.png) no-repeat;
+        background-size: 100% 100%;
+    }
+
+    ion-header {
+        left: 0;
+        top: 0;
+        position: absolute;
+        z-index: 10;
+        display: block;
+        width: 100%;
+        height: 15% !important;
+    }
+
+    .select-md {
+        padding: 0px 0px 0px 0px;
+    }
+
+    ion-select {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        overflow: hidden;
+        max-width: 58% !important;
+    }
+
+    .select-md .select-icon .select-icon-inner {
+        left: 0px;
+        top: 50%;
+        margin-top: -3px;
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: 5px solid;
+        border-right: 5px solid transparent;
+        border-left: 5px solid transparent;
+        color: #32db64;
+        pointer-events: none;
+    }
+
+    .select-box {
+        margin-left: 32% !important;
+    }
+
+    .crop {
+        width: 58% !important;
+        margin-left: 125px !important;
+        margin-top: 10px !important;
+    }
+
+    .weather-box span {
+        font-size: 12px;
+        color: white;
+        float: right;
+    }
+
+    .weather-box img {
+        width: 40%;
+        float: right;
+    }
+
+    @media screen and (max-width: 480px) {
+        .crop {
+            width: 58% !important;
+            margin-left: 90px !important;
+            margin-top: 5px !important;
+        }
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 600px) {
+        .crop {
+            width: 59% !important;
+            margin-left: 119px !important;
+            margin-top: 20px !important;
+        }
+    }
+
+    @media screen and (min-width: 641px) and (max-width: 730px) {
+        .crop {
+            width: 57% !important;
+            margin-left: 140px !important;
+            margin-top: 15px !important;
+        }
+    }
+
+    @media screen and (min-width: 731px) and (max-width: 751px) {
+        .crop {
+            width: 55% !important;
+            margin-left: 160px !important;
+            margin-top: 30px !important;
+        }
+    }
+
+    .rain {
+        //        background: url(../assets/Rain_Snow_04.gif) no-repeat fixed;
+        //        background-size: cover;
+        //        height: 100%;
+        //        padding: 0;
+        //        margin: 0;
+        background: url(../assets/Rain_Snow_04.gif) no-repeat fixed;
+        background-size: 110% 113%;
+        margin: 0;
+        height: 100%;
+    }
+
+    .snowback {
+        box-shadow: inset 0 0 0 500px rgba(36, 70, 105, 0.3);
+    } //    .rainsnowcrop{
+    //        opacity: .8;
+    //    }
+    .rainback {
+        box-shadow: inset 0 0 0 500px rgba(0, 62, 62, 0.3);
+    }
+
+    @keyframes snow {
+        0% {
+            background-position: 0px 0px, 0px 0px, 0px 0px;
+        }
+
+        50% {
+            background-position: 500px 500px, 100px 200px, -100px 150px;
+        }
+
+        100% {
+            background-position: 500px 1000px, 200px 400px, -100px 300px;
+        }
+    }
+
+    @-moz-keyframes snow {
+        0% {
+            background-position: 0px 0px, 0px 0px, 0px 0px;
+        }
+
+        50% {
+            background-position: 500px 500px, 100px 200px, -100px 150px;
+        }
+
+        100% {
+            background-position: 400px 1000px, 200px 400px, 100px 300px;
+        }
+    }
+
+    @-webkit-keyframes snow {
+        0% {
+            background-position: 0px 0px, 0px 0px, 0px 0px;
+        }
+
+        50% {
+            background-position: 500px 500px, 100px 200px, -100px 150px;
+        }
+
+        100% {
+            background-position: 500px 1000px, 200px 400px, -100px 300px;
+        }
+    }
+
+    @-ms-keyframes snow {
+        0% {
+            background-position: 0px 0px, 0px 0px, 0px 0px;
+        }
+
+        50% {
+            background-position: 500px 500px, 100px 200px, -100px 150px;
+        }
+
+        100% {
+            background-position: 500px 1000px, 200px 400px, -100px 300px;
+        }
+    }
+
+    .footerbg {
+        background: url(../assets/register/date.png) no-repeat center center fixed;
+        background-size: 100% 100%;
+    }
+
+    .swiper-container {
+        height: 80px !important;
+    }
+
+    .select-text {
+        margin-top: 3px !important;
+    }
+
+    .backsize1 {
+        background-size: 140% 140% !important;
+    }
+
+    .crop1 {
+        width: 76% !important;
+        margin-left: 68px !important;
+        margin-top: -33px !important;
+    }
+
+    .backsize2 {
+        background-size: 180% 180% !important;
+    }
+
+    .crop2 {
+        width: 94% !important;
+        margin-left: 21px !important;
+        margin-top: -77px !important;
+    }
+
+    .swiper-container {
+        height: 70px !important;
+    } // new chganges
+    .fab-in-list {
+        margin: 6px 0 !important;
+        width: 45px !important;
+        height: 45px !important;
+    }
+
+    ion-fab-list {
+        margin: 55px 0 !important;
+    }
+
+    ion-fab[top][edge] {
+        top: -5px !important;
+    }
+
+
+    @media screen and (min-width: 601px) and (max-width: 640px) {
+        .crop {
+            //            width: 58% !important;
+            //            margin-left: 125px !important;
+            //            margin-top: 10px !important;
+            //            width: 55% !important;
+            //            margin-left: 145px !important;
+            //            margin-top: 25px !important;
+            // old width: 51% !important;
+            // margin-left: 160px !important;
+            // margin-top: 29px !important;
+            width: 55% !important;
+            margin-left: 22% !important;
+            margin-top: 29px !important;
+
+        }
+    }
+
+    .day {
+        background: url('../assets/register/01day.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .rain2 {
+        background: url('../assets/register/02rain.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .suny {
+        background: url('../assets/register/04morning.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .night {
+        background: url('../assets/register/03night.jpg') no-repeat center center fixed;
+        background-size: cover;
+    } //end
+}

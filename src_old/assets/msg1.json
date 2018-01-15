@@ -1,0 +1,554 @@
+[{
+	"id": 1,
+	"crop_name": "potato",
+	"dap": -50,
+	"Practices": "Soil Testing",
+	"done": "yes"
+
+}, {
+	"id": 2,
+	"crop_name": "potato",
+	"dap": -35,
+	"Practices": "Soil Test Report",
+	"done": "yes"
+}, {
+	"id": 3,
+	"crop_name": "potato",
+	"dap": -30,
+	"Practices": "Variety Selection",
+	"done": "yes"
+}, {
+	"id": 4,
+	"crop_name": "potato",
+	"dap": -25,
+	"Practices": "Ploughing",
+	"done": "yes"
+}, {
+	"id": 5,
+	"crop_name": "potato",
+	"dap": -18,
+	"Practices": "Harrowing",
+	"done": "yes"
+}, {
+	"id": 6,
+	"crop_name": "potato",
+	"dap": -7,
+	"Practices": "Seedbed Preparation",
+	"done": "yes"
+}, {
+	"id": 7,
+	"crop_name": "potato",
+	"dap": -2,
+	"Practices": "Seed Treatment - Pesticide",
+	"done": "yes"
+}, {
+	"id": 8,
+	"crop_name": "potato",
+	"dap": -1,
+	"Practices": "Seed Treatment - Rhizobium",
+	"done": "yes"
+}, {
+	"id": 9,
+	"crop_name": "potato",
+	"dap": 0,
+	"Practices": "Sowing & Irrigation",
+	"done": "yes",
+	"img": "assets/04_Potato/normal/Potato_Stage_01.png",
+	"img_zoom": "assets/04_Potato/normal_zoom/Potato_Stage_01.png"
+}, {
+	"id": 10,
+	"crop_name": "potato",
+	"dap": 1,
+	"Practices": "Basal Dose of Fertilizers",
+	"done": "yes",
+	"img": "assets/04_Potato/normal/Potato_Stage_01.png",
+	"img_zoom": "assets/04_Potato/normal_zoom/Potato_Stage_01.png"
+}, {
+	"id": 11,
+	"crop_name": "potato",
+	"dap": 3,
+	"Practices": "Weed Management",
+	"done": "yes",
+	"img": "assets/04_Potato/normal/Potato_Stage_01.png",
+	"img_zoom": "assets/04_Potato/normal_zoom/Potato_Stage_01.png"
+}, {
+	"id": 12,
+	"crop_name": "potato",
+	"dap": 4,
+	"Practices": "Curative Action (Insect)",
+	"done": "yes",
+	"img": "assets/04_Potato/insect/Potato_Stage_01.png",
+	"img_zoom": "assets/04_Potato/insect_zoom/Potato_Stage_01.png"
+}, {
+	"id": 13,
+	"crop_name": "potato",
+	"dap": 10,
+	"Practices": "Gap filling / Thinning",
+	"done": "yes",
+	"img": "assets/04_Potato/normal/Potato_Stage_02.png",
+	"img_zoom": "assets/04_Potato/normal_zoom/Potato_Stage_02.png"
+}, {
+	"id": 14,
+	"crop_name": "potato",
+	"dap": 12,
+	"Practices": "Curative Action (Insect)",
+	"done": "yes",
+	"img": "assets/04_Potato/insect/Potato_Stage_02.png",
+	"img_zoom": "assets/04_Potato/insect_zoom/Potato_Stage_02.png"
+}, {
+	"id": 15,
+	"crop_name": "potato",
+	"dap": 13,
+	"Practices": "Irrigation",
+	"done": "yes",
+	"img": "assets/04_Potato/normal/Potato_Stage_02.png",
+	"img_zoom": "assets/04_Potato/normal_zoom/Potato_Stage_02.png"
+}, {
+	"id": 16,
+	"crop_name": "potato",
+	"dap": 14,
+	"Practices": "Preventive Action (Fungal)",
+	"done": "yes",
+	"img": "assets/04_Potato/fungal/Potato_Stage_02.png",
+	"img_zoom": "assets/04_Potato/fungal_zoom/Potato_Stage_02.png"
+}, {
+	"id": 17,
+	"crop_name": "potato",
+	"dap": 15,
+	"Practices": "Weed Management",
+	"done": "yes",
+	"img": "assets/04_Potato/normal/Potato_Stage_02.png",
+	"img_zoom": "assets/04_Potato/normal_zoom/Potato_Stage_02.png"
+}, {
+	"id": 18,
+	"crop_name": "potato",
+	"dap": 16,
+	"Practices": "Irrigation",
+	"done": "yes",
+	"img": "assets/04_Potato/normal/Potato_Stage_02.png",
+	"img_zoom": "assets/04_Potato/normal_zoom/Potato_Stage_02.png"
+}, {
+	"id": 19,
+	"crop_name": "potato",
+	"dap": 17,
+	"Practices": "Nutrient Management",
+	"done": "yes",
+	"img": "assets/04_Potato/normal/Potato_Stage_02.png",
+	"img_zoom": "assets/04_Potato/normal_zoom/Potato_Stage_02.png"
+}, {
+	"id": 20,
+	"crop_name": "potato",
+	"dap": 20,
+	"Practices": "Curative Action (Insect)",
+	"done": "yes",
+	"img": "assets/04_Potato/insect/Potato_Stage_02.png",
+	"img_zoom": "assets/04_Potato/insect_zoom/Potato_Stage_02.png"
+}, {
+	"id": 21,
+	"crop_name": "potato",
+	"dap": 23,
+	"Practices": "Irrigation",
+	"done": "yes",
+	"img": "assets/04_Potato/normal/Potato_Stage_02.png",
+	"img_zoom": "assets/04_Potato/normal_zoom/Potato_Stage_02.png"
+}, {
+	"id": 22,
+	"crop_name": "potato",
+	"dap": 25,
+	"Practices": "Preventive Action (Viral) & Irrigation",
+	"done": "yes",
+	"img": "assets/04_Potato/viral/Potato_Stage_02.png",
+	"img_zoom": "assets/04_Potato/viral_zoom/Potato_Stage_02.png"
+}, {
+	"id": 23,
+	"crop_name": "potato",
+	"dap": 29,
+	"Practices": "Irrigation",
+	"done": "yes",
+	"img": "assets/04_Potato/normal/Potato_Stage_03.png",
+	"img_zoom": "assets/04_Potato/normal_zoom/Potato_Stage_03.png"
+}, {
+	"id": 24,
+	"crop_name": "potato",
+	"dap": 31,
+	"Practices": "Weed Management",
+	"done": "yes",
+	"img": "assets/04_Potato/normal/Potato_Stage_03.png",
+	"img_zoom": "assets/04_Potato/normal_zoom/Potato_Stage_03.png"
+}, {
+	"id": 25,
+	"crop_name": "potato",
+	"dap": 34,
+	"Practices": "Curative Action (Insect)",
+	"done": "yes",
+	"img": "assets/04_Potato/insect/Potato_Stage_03.png",
+	"img_zoom": "assets/04_Potato/insect_zoom/Potato_Stage_03.png"
+}, {
+	"id": 26,
+	"crop_name": "potato",
+	"dap": 36,
+	"Practices": "Preventive Action (Fungal)",
+	"done": "yes",
+	"img": "assets/04_Potato/fungal/Potato_Stage_03.png",
+	"img_zoom": "assets/04_Potato/fungal_zoom/Potato_Stage_03.png"
+}, {
+	"id": 27,
+	"crop_name": "potato",
+	"dap": 38,
+	"Practices": "Preventive Action (Viral)",
+	"done": "yes",
+	"img": "assets/04_Potato/viral/Potato_Stage_03.png",
+	"img_zoom": "assets/04_Potato/viral_zoom/Potato_Stage_03.png"
+}, {
+	"id": 28,
+	"crop_name": "potato",
+	"dap": 39,
+	"Practices": "Irrigation",
+	"done": "yes",
+	"img": "assets/04_Potato/normal/Potato_Stage_03.png",
+	"img_zoom": "assets/04_Potato/normal_zoom/Potato_Stage_03.png"
+}, {
+	"id": 29,
+	"crop_name": "potato",
+	"dap": 40,
+	"Practices": "Nutrient Management",
+	"done": "yes",
+	"img": "assets/04_Potato/normal/Potato_Stage_03.png",
+	"img_zoom": "assets/04_Potato/normal_zoom/Potato_Stage_03.png"
+}, {
+	"id": 30,
+	"crop_name": "potato",
+	"dap": 42,
+	"Practices": "Curative Action (Insect)",
+	"done": "yes",
+	"img": "assets/04_Potato/insect/Potato_Stage_03.png",
+	"img_zoom": "assets/04_Potato/insect_zoom/Potato_Stage_03.png"
+}, {
+	"id": 31,
+	"crop_name": "potato",
+	"dap": 44,
+	"Practices": "Preventive Action (Bacterial)",
+	"done": "yes",
+	"img": "assets/04_Potato/bacterial/Potato_Stage_03.png",
+	"img_zoom": "assets/04_Potato/bacterial_zoom/Potato_Stage_03.png"
+}, {
+	"id": 32,
+	"crop_name": "potato",
+	"dap": 48,
+	"Practices": "Irrigation",
+	"done": "yes",
+	"img": "assets/04_Potato/normal/Potato_Stage_04.png",
+	"img_zoom": "assets/04_Potato/normal_zoom/Potato_Stage_04.png"
+}, {
+	"id": 33,
+	"crop_name": "potato",
+	"dap": 49,
+	"Practices": "Preventive Action (Fungal)",
+	"done": "yes",
+	"img": "assets/04_Potato/fungal/Potato_Stage_04.png",
+	"img_zoom": "assets/04_Potato/fungal_zoom/Potato_Stage_04.png"
+}, {
+	"id": 34,
+	"crop_name": "potato",
+	"dap": 50,
+	"Practices": "Curative Action (Insect)",
+	"done": "yes",
+	"img": "assets/04_Potato/insect/Potato_Stage_04.png",
+	"img_zoom": "assets/04_Potato/insect_zoom/Potato_Stage_04.png"
+}, {
+	"id": 35,
+	"crop_name": "potato",
+	"dap": 51,
+	"Practices": "Preventive Action (Viral)",
+	"done": "yes",
+	"img": "assets/04_Potato/viral/Potato_Stage_04.png",
+	"img_zoom": "assets/04_Potato/viral_zoom/Potato_Stage_04.png"
+}, {
+	"id": 36,
+	"crop_name": "potato",
+	"dap": 53,
+	"Practices": "Irrigation",
+	"done": "yes",
+	"img": "assets/04_Potato/normal/Potato_Stage_04.png",
+	"img_zoom": "assets/04_Potato/normal_zoom/Potato_Stage_04.png"
+}, {
+	"id": 37,
+	"crop_name": "potato",
+	"dap": 58,
+	"Practices": "Curative Action (Insect)",
+	"done": "yes",
+	"img": "assets/04_Potato/insect/Potato_Stage_04.png",
+	"img_zoom": "assets/04_Potato/insect_zoom/Potato_Stage_04.png"
+}, {
+	"id": 38,
+	"crop_name": "potato",
+	"dap": 59,
+	"Practices": "Preventive Action (Fungal)",
+	"done": "yes",
+	"img": "assets/04_Potato/fungal/Potato_Stage_04.png",
+	"img_zoom": "assets/04_Potato/fungal_zoom/Potato_Stage_04.png"
+}, {
+	"id": 39,
+	"crop_name": "potato",
+	"dap": 64,
+	"Practices": "Preventive Action (Viral) & Irrigation",
+	"done": "yes",
+	"img": "assets/04_Potato/viral/Potato_Stage_04.png",
+	"img_zoom": "assets/04_Potato/viral_zoom/Potato_Stage_04.png"
+}, {
+	"id": 40,
+	"crop_name": "potato",
+	"dap": 66,
+	"Practices": "Curative Action (Insect)",
+	"done": "yes",
+	"img": "assets/04_Potato/insect/Potato_Stage_04.png",
+	"img_zoom": "assets/04_Potato/insect_zoom/Potato_Stage_04.png"
+}, {
+	"id": 41,
+	"crop_name": "potato",
+	"dap": 67,
+	"Practices": "Preventive Action (Fungal)",
+	"done": "yes",
+	"img": "assets/04_Potato/fungal/Potato_Stage_04.png",
+	"img_zoom": "assets/04_Potato/fungal_zoom/Potato_Stage_04.png"
+}, {
+	"id": 42,
+	"crop_name": "potato",
+	"dap": 71,
+	"Practices": "Irrigation",
+	"done": "yes",
+	"img": "assets/04_Potato/normal/Potato_Stage_04.png",
+	"img_zoom": "assets/04_Potato/normal_zoom/Potato_Stage_04.png"
+}, {
+	"id": 43,
+	"crop_name": "potato",
+	"dap": 74,
+	"Practices": "Curative Action (Insect)",
+	"done": "yes",
+	"img": "assets/04_Potato/insect/Potato_Stage_04.png",
+	"img_zoom": "assets/04_Potato/insect_zoom/Potato_Stage_04.png"
+}, {
+	"id": 44,
+	"crop_name": "potato",
+	"dap": 76,
+	"Practices": "Curative Action (Bacterial)",
+	"done": "yes",
+	"img": "assets/04_Potato/bacterial/Potato_Stage_04.png",
+	"img_zoom": "assets/04_Potato/bacterial_zoom/Potato_Stage_04.png"
+}, {
+	"id": 45,
+	"crop_name": "potato",
+	"dap": 77,
+	"Practices": "Preventive Action (Viral)",
+	"done": "yes",
+	"img": "assets/04_Potato/viral/Potato_Stage_04.png",
+	"img_zoom": "assets/04_Potato/viral_zoom/Potato_Stage_04.png"
+}, {
+	"id": 46,
+	"crop_name": "potato",
+	"dap": 78,
+	"Practices": "Irrigation",
+	"done": "yes",
+	"img": "assets/04_Potato/normal/Potato_Stage_04.png",
+	"img_zoom": "assets/04_Potato/normal_zoom/Potato_Stage_04.png"
+}, {
+	"id": 47,
+	"crop_name": "potato",
+	"dap": 82,
+	"Practices": "Curative Action (Insect)",
+	"done": "yes",
+	"img": "assets/04_Potato/insect/Potato_Stage_04.png",
+	"img_zoom": "assets/04_Potato/insect_zoom/Potato_Stage_04.png"
+}, {
+	"id": 48,
+	"crop_name": "potato",
+	"dap": 83,
+	"Practices": "Curative Action (Bacterial)",
+	"done": "yes",
+	"img": "assets/04_Potato/bacterial/Potato_Stage_04.png",
+	"img_zoom": "assets/04_Potato/bacterial_zoom/Potato_Stage_04.png"
+}, {
+	"id": 49,
+	"crop_name": "potato",
+	"dap": 85,
+	"Practices": "Preventive Action (Fungal)",
+	"done": "yes",
+	"img": "assets/04_Potato/fungal/Potato_Stage_04.png",
+	"img_zoom": "assets/04_Potato/fungal_zoom/Potato_Stage_04.png"
+}, {
+	"id": 50,
+	"crop_name": "potato",
+	"dap": 88,
+	"Practices": "Preventive Action (Other)",
+	"done": "yes",
+	"img": "assets/04_Potato/normal/Potato_Stage_04.png",
+	"img_zoom": "assets/04_Potato/normal_zoom/Potato_Stage_04.png"
+}, {
+	"id": 51,
+	"crop_name": "potato",
+	"dap": 89,
+	"Practices": "Curative Action (Insect)",
+	"done": "yes",
+	"img": "assets/04_Potato/insect/Potato_Stage_04.png",
+	"img_zoom": "assets/04_Potato/insect_zoom/Potato_Stage_04.png"
+}, {
+	"id": 52,
+	"crop_name": "potato",
+	"dap": 94,
+	"Practices": "Irrigation",
+	"done": "yes",
+	"img": "assets/04_Potato/normal/Potato_Stage_04.png",
+	"img_zoom": "assets/04_Potato/normal_zoom/Potato_Stage_04.png"
+}, {
+	"id": 53,
+	"crop_name": "potato",
+	"dap": 96,
+	"Practices": "Curative Action (Bacterial)",
+	"done": "yes",
+	"img": "assets/04_Potato/bacterial/Potato_Stage_04.png",
+	"img_zoom": "assets/04_Potato/bacterial_zoom/Potato_Stage_04.png"
+}, {
+	"id": 54,
+	"crop_name": "potato",
+	"dap": 104,
+	"Practices": "Harvest",
+	"done": "yes",
+	"img": "assets/04_Potato/normal/Potato_Stage_06.png",
+	"img_zoom": "assets/04_Potato/normal_zoom/Potato_Stage_06.png"
+}, {
+	"id": 55,
+	"crop_name": "potato",
+	"dap": 108,
+	"Practices": "Threshing",
+	"done": "yes",
+	"img": "assets/04_Potato/normal/Potato_Stage_06.png",
+	"img_zoom": "assets/04_Potato/normal_zoom/Potato_Stage_06.png"
+}, {
+	"id": 56,
+	"crop_name": "potato",
+	"dap": 112,
+	"Practices": "Cleaning",
+	"done": "yes",
+	"img": "assets/04_Potato/normal/Potato_Stage_06.png",
+	"img_zoom": "assets/04_Potato/normal_zoom/Potato_Stage_06.png"
+}, {
+	"id": 57,
+	"crop_name": "potato",
+	"dap": 116,
+	"Practices": "Drying",
+	"done": "yes",
+	"img": "assets/04_Potato/normal/Potato_Stage_06.png",
+	"img_zoom": "assets/04_Potato/normal_zoom/Potato_Stage_06.png"
+}, {
+	"id": 58,
+	"crop_name": "potato",
+	"dap": 119,
+	"Practices": "Storage",
+	"done": "yes",
+	"img": "assets/04_Potato/normal/Potato_Stage_06.png",
+	"img_zoom": "assets/04_Potato/normal_zoom/Potato_Stage_06.png"
+}, {
+	"id": 59,
+	"crop_name": "potato",
+	"dap": 365,
+	"Practices": "Irrigation",
+	"done": "yes",
+	"img": "assets/04_Potato/normal/Potato_Stage_06.png",
+	"img_zoom": "assets/04_Potato/normal_zoom/Potato_Stage_06.png"
+}, {
+	"id": 60,
+	"crop_name": "potato",
+	"dap": 378,
+	"Practices": "Irrigation",
+	"done": "yes",
+	"img": "assets/04_Potato/normal/Potato_Stage_06.png",
+	"img_zoom": "assets/04_Potato/normal_zoom/Potato_Stage_06.png"
+}, {
+	"id": 61,
+	"crop_name": "potato",
+	"dap": 381,
+	"Practices": "Irrigation",
+	"done": "yes",
+	"img": "assets/04_Potato/normal/Potato_Stage_06.png",
+	"img_zoom": "assets/04_Potato/normal_zoom/Potato_Stage_06.png"
+}, {
+	"id": 62,
+	"crop_name": "potato",
+	"dap": 388,
+	"Practices": "Irrigation",
+	"done": "yes",
+	"img": "assets/04_Potato/normal/Potato_Stage_06.png",
+	"img_zoom": "assets/04_Potato/normal_zoom/Potato_Stage_06.png"
+}, {
+	"id": 63,
+	"crop_name": "potato",
+	"dap": 390,
+	"Practices": "Irrigation",
+	"done": "yes",
+	"img": "assets/04_Potato/normal/Potato_Stage_06.png",
+	"img_zoom": "assets/04_Potato/normal_zoom/Potato_Stage_06.png"
+}, {
+	"id": 64,
+	"crop_name": "potato",
+	"dap": 394,
+	"Practices": "Irrigation",
+	"done": "yes",
+	"img": "assets/04_Potato/normal/Potato_Stage_06.png",
+	"img_zoom": "assets/04_Potato/normal_zoom/Potato_Stage_06.png"
+}, {
+	"id": 65,
+	"crop_name": "potato",
+	"dap": 404,
+	"Practices": "Irrigation",
+	"done": "yes",
+	"img": "assets/04_Potato/normal/Potato_Stage_06.png",
+	"img_zoom": "assets/04_Potato/normal_zoom/Potato_Stage_06.png"
+}, {
+	"id": 66,
+	"crop_name": "potato",
+	"dap": 413,
+	"Practices": "Irrigation",
+	"done": "yes",
+	"img": "assets/04_Potato/normal/Potato_Stage_06.png",
+	"img_zoom": "assets/04_Potato/normal_zoom/Potato_Stage_06.png"
+}, {
+	"id": 67,
+	"crop_name": "potato",
+	"dap": 418,
+	"Practices": "Irrigation",
+	"done": "yes",
+	"img": "assets/04_Potato/normal/Potato_Stage_06.png",
+	"img_zoom": "assets/04_Potato/normal_zoom/Potato_Stage_06.png"
+}, {
+	"id": 68,
+	"crop_name": "potato",
+	"dap": 429,
+	"Practices": "Irrigation",
+	"done": "yes",
+	"img": "assets/04_Potato/normal/Potato_Stage_06.png",
+	"img_zoom": "assets/04_Potato/normal_zoom/Potato_Stage_06.png"
+}, {
+	"id": 69,
+	"crop_name": "potato",
+	"dap": 436,
+	"Practices": "Irrigation",
+	"done": "yes",
+	"img": "assets/04_Potato/normal/Potato_Stage_06.png",
+	"img_zoom": "assets/04_Potato/normal_zoom/Potato_Stage_06.png"
+}, {
+	"id": 70,
+	"crop_name": "potato",
+	"dap": 443,
+	"Practices": "Irrigation",
+	"done": "yes",
+	"img": "assets/04_Potato/normal/Potato_Stage_06.png",
+	"img_zoom": "assets/04_Potato/normal_zoom/Potato_Stage_06.png"
+}, {
+	"id": 71,
+	"crop_name": "potato",
+	"dap": 459,
+	"Practices": "Irrigation",
+	"done": "yes",
+	"img": "assets/04_Potato/normal/Potato_Stage_06.png",
+	"img_zoom": "assets/04_Potato/normal_zoom/Potato_Stage_06.png"
+}]

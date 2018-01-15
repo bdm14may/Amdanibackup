@@ -1,0 +1,68 @@
+
+<ion-content padding>
+ <!--   <button (click)="dismiss()" style="float:right; background: transparent;color: white;font-size: 20px;">
+        <ion-icon ios="ios-close" md="md-close"></ion-icon>
+    </button>--> 
+    <ion-row>
+        <ion-col class="mid-bg" col-11>
+            <h1 style="margin-top:10%; color:#095C9B !important;">फसल ज़मीन का विवरण</h1>
+            <ion-grid>
+                <ion-row class="row-head">
+                   
+                    <ion-col col-3>
+                        फसल ज़मीन का नाम
+                    </ion-col>
+                    <ion-col col-2>
+                        फ़सल
+                    </ion-col>
+                    <ion-col col-2>
+                        वैराइटी
+                    </ion-col>
+                    <ion-col col-2>
+                        हेक्टेयर
+                    </ion-col> 
+                    <ion-col col-2>
+                    </ion-col>
+                    <ion-col col-1>
+                        
+                    </ion-col>
+                </ion-row> 
+                <ion-row *ngFor="let plot of tr;let i=index;" >
+                   
+                    <ion-col class="col-border" col-3>
+                        {{plot.Map_name}}
+                    </ion-col>
+                    <ion-col class="col-border" col-2>
+                        {{plot.Crop_name}}
+                    </ion-col>
+                    <ion-col class="col-border" col-2>
+                        {{plot.Variety_Name}}
+                    </ion-col>
+                    <ion-col class="col-border" col-2>
+                        {{plot.Size}}
+                    </ion-col> 
+                    <ion-col class="col-border" col-1>
+                        <button ion-button class="view-btn" style="margin-top:5px;" (click)="crops(plot,i)" clear>
+                            <b> देखे</b>
+                        </button>
+                    </ion-col>
+                    <ion-col class="col-border" col-2>
+                            <button ion-button class="view-btn" style="margin-top:5px;" (click)="presentPrompt(plot,i)" clear>
+                        <b>संपादित करें</b>
+                            </button>
+                            <br>
+                            <button ion-button class="view-btn" style="margin-top:5px;" (click)="presentConfirm2(plot,i)" clear>
+                           <b> हटाए</b>
+                                </button>
+                            
+                        </ion-col>
+                    
+                </ion-row>  
+            </ion-grid>
+            <button ion-button class="add-button2"  style="margin-top:5px;" (click)="add_plot()" clear>
+                जोड़ना
+            </button>
+            <button class="add-button2" (click)="dismiss()" ion-button>खारिज</button>
+        </ion-col>
+    </ion-row>
+</ion-content>

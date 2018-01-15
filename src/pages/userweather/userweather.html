@@ -1,0 +1,56 @@
+<ion-content padding>
+    <ion-row *ngIf="trfe">
+        <ion-col class="mid-bg" col-11>
+            <h1 style="margin-top:20px; color:#095C9B !important;">{{trfe.weather}}</h1>
+            <span style="margin-top: 0; font-size: 20px;">{{lastUpdated | amDateFormat:'MMMM Do YYYY'}}</span><br><br>
+            <ion-row>
+                <ion-col col-5>
+                    <span>
+                        <!-- <p *ngFor="let value1 of (registered4 | async);let i = index" style="text-align: left; margin-left: 8px;">
+<span *ngIf="value1.StateID"> <span *ngFor="let value2 of value1.StateID">{{value2.name}}</span>,<br><span *ngFor="let value2 of value1.VillageID">{{value2.name}}</span>,<span *ngFor="let value2 of value1.TAlukaID">{{value2.name}}</span>,<br><span *ngFor="let value2 of value1.DistID">{{value2.name}}</span></span>
+<span *ngIf="!value1.StateID"> <span>{{value1.State_Name}}</span>, <br><span >{{value1.Dist_Name}}</span>, <span>{{value1.Village_name}}</span>, <br><span>{{value1.Taluka_name}}</span></span>
+</p>  -->
+                        <p  style="text-align: left; margin-left: 8px;" *ngIf="placeinfo">
+                            <span> <span>{{placeinfo.subLocality?placeinfo.subLocality:placeinfo.locality}}</span>,<br><span>{{placeinfo.locality?placeinfo.locality:''}}</span>,<span>{{placeinfo.subAdministrativeArea?placeinfo.subAdministrativeArea:''}}</span>,<br><span>{{placeinfo.administrativeArea?placeinfo.administrativeArea:''}}</span></span>
+
+                        </p> 
+                    </span>
+                </ion-col>
+                <!--
+<ion-col col-5>
+<p style="text-align: left; margin-left: 8px;">
+Mumbai,<br>
+MAHARASHTRA,<br>
+3rd Sep,Wed 2:00 PM <br>
+HAZE
+</p>
+</ion-col> 
+-->
+                <ion-col col-3 *ngFor="let value2 of weatherinfo">
+                    <span *ngFor="let value3 of value2.time_segments">
+                        <img src="http://www.myforecast.com/img/icons/{{value3.icon}}.png" alt="" style="width: 100%;float: left;margin-left: -20px;">
+                    </span>
+                </ion-col>
+                <ion-col col-4 *ngFor="let value2 of weatherinfo">
+                    <span *ngFor="let value3 of value2.time_segments">
+                        <span style="text-align: left;margin-left: -50px;font-size: 30px;">{{value3.high_temp}} /{{value3.low_temp}} °C</span>
+
+
+                        <p style="text-align: left; margin-left:0px;margin-top: 0;margin-bottom: 0;"  >
+                            <br> {{trfe.humidity}}: {{value3.humidity}} % 
+                        </p>
+                        <p style="text-align: left; margin-left:0px;margin-top: 0;margin-bottom: 0;"  >
+                            <br> {{trfe.wind_speed}}: {{value3.wind_speed}} km/h
+                        </p>
+                    </span>
+                </ion-col>
+            </ion-row>
+            <br />
+            <button (click)="nextpage()" clear style="margin-top:-5px;" ion-button><img src="assets/register/next_button.png"  alt="" style="width:50%;"></button>
+        </ion-col>
+    </ion-row>
+</ion-content>
+
+
+
+

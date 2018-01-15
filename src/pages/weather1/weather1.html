@@ -1,0 +1,51 @@
+<ion-content padding>
+    <!--     <button (click)="dismiss()" style="float:right; background: transparent;color: white;font-size: 20px;">
+<ion-icon ios="ios-close" md="md-close" style=" color: red;"></ion-icon>
+</button>  
+-->
+
+    <ion-row *ngIf="trfe">
+        <ion-col class="mid-bg" col-11>
+            <h1 style="margin-top:20px; color:white !important;">{{trfe.home_weather}}</h1>
+            <span *ngIf="tempfg" style="margin-top: 0; font-size: 16px;">{{tempfg.iso8601  | amDateFormat:'MMMM Do YYYY'}}</span>
+            <ion-row>
+                <ion-col col-5>
+                    <span>
+                        <p *ngFor="let value1 of (registered8 | async);let i = index" style="text-align: left; margin-left: 8px;">
+                            <span> <span>{{value1.State_Name}}</span>, <br><span>{{value1.Dist_Name}}</span>, <span>{{value1.Village_name}}</span>, <br><span>{{value1.Taluka_name}}</span></span>
+                        </p> 
+                    </span>
+                </ion-col>
+                <ion-col col-3 *ngIf="tempfg">
+                    <span>
+                        <img src="http://www.myforecast.com/img/icons/{{tempfg.icon}}.png" alt="" style="width: 100%;float: left;margin-left: -20px;">
+                    </span>
+                </ion-col>
+                <ion-col col-4 *ngIf="tempfg">
+                    <span>
+                        <span style="text-align: left;margin-left: -50px;font-size: 24px;">{{tempfg.high_temp}} /{{tempfg.low_temp}} °C</span>
+                        <p style="text-align: left; margin-left:0px;margin-top: 0;margin-bottom: 0;"  >
+                            <br> {{trfe.humidity}}: {{tempfg.humidity}}% 
+                        </p>
+                        <p style="text-align: left; margin-left:0px;margin-top: 0;margin-bottom: 0;"  >
+                            <br> {{trfe.wind_speed}}: {{tempfg.wind_speed}} km/h
+                        </p>
+                    </span>
+                </ion-col>
+            </ion-row>
+            <ion-row style="margin-top: 0px;" *ngFor="let value2 of weatherinfo1" >
+                <ion-col col-1></ion-col>
+                <ion-slides slidesPerView="4">
+                    <ion-slide *ngFor="let value3 of value2.time_segments;let j=index;">
+                        <ion-row style="margin-top: 0px;" >
+                            {{value3.temperature}}
+                            <button class="add-button2" ion-button  [ngClass]="{'add-button1':showblue==j}" (click)="showinfo(value3,j)" clear>{{value3.iso8601 | amDateFormat: 'MMM Do'}}</button>
+                        </ion-row>
+                    </ion-slide>
+                </ion-slides>
+            </ion-row>
+            <button ion-button round  class="add-button2" (click)="dismiss()" style="width: 28% !important;" >{{trfe.Dismiss}}</button>
+        </ion-col>
+    </ion-row>
+</ion-content>
+

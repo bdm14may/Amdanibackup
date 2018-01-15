@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "Value": "Short"
+
+  },
+  {
+
+    "id": 2,
+    "Value": "Medium"
+
+
+  },
+  {
+
+    "id": 3,
+    "Value": "Long"
+  }
+]

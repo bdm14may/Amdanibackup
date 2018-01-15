@@ -1,0 +1,166 @@
+<!-- <ion-header *ngFor="let t of weathers |async">
+<ion-navbar hideBackButton="true">
+<ion-row style="margin-top: -4px;">
+<ion-col col-2>
+<button ion-button (click)="modal()" style="width:80px;margin:0;" clear>
+<img src="assets/register/User_icon.png" alt="">
+</button>
+</ion-col>
+<ion-col col-1></ion-col>
+<ion-col class="head-crop" col-3>
+<p class="text-head">
+<ion-select class="select-box">
+<ion-option value="p">POTATO</ion-option>
+<ion-option value="w">WHEAT</ion-option>
+<ion-option value="g">GRAM</ion-option>
+<ion-option value="mz">MAIZE</ion-option>
+<ion-option value="m" selected>MUSTARD</ion-option>
+</ion-select>
+</p>
+</ion-col>
+<ion-col class="head-qty" col-3>
+<p class="text-head1">50 KG/ACRE</p>
+</ion-col>
+
+</ion-row>
+</ion-navbar>
+</ion-header>-->
+
+<ion-header>
+    <ion-navbar hideBackButton="true" *ngFor="let value2 of weatherinfo1">
+        <ion-row style="margin-top:0px;" *ngFor="let value3 of value2.time_segments">
+            <ion-col col-2 style="margin-top: -5%;height: 12px;">
+                <button ion-fab clear (click)="modal()" style="background:white;width:45px;height:45px;margin-top:24px;margin-left:7px;">
+                    <img src="assets/MyAgriGuru.png">
+                </button>
+            </ion-col>
+            <ion-col class="head-qty" (click)="changeheadermodal()" col-3>
+                <p class="text-head1" style="font-size: 11px;"><b>प्लॉट का नाम:</b> {{Map_namegh?Map_namegh:'.'}}</p>
+            </ion-col>
+            <ion-col class="head-qty-old" col-3 *ngIf="landyield">
+                <p class="text-head1" style="font-size: 11px;"><b style="font-size: 11px;">उपज:</b> {{landyield}} KG/HA</p>
+            </ion-col>
+            <ion-col class="head-qty1" col-2>
+                <p class="text-head" style="font-size: 11px;margin-left: 32%;"><span style="display:none;">Points:</span> {{coin?coin:0}}</p>
+            </ion-col>
+            <ion-col col-2 *ngIf="showcropeimage">
+                <button (click)="presentAlerter()" style="margin-top: -2%;background: white; float: right;" ion-fab clear>
+                    <img *ngIf="showcropeimage!='Tomato' || showcropeimage!='Sugarcane' || showcropeimage!='Banana'" src="assets/register/{{showcropeimage}}_Icon.png" alt="">
+                    <img *ngIf="showcropeimage=='Tomato'" src="assets/icon1/tomato.png" alt="">
+                    <img *ngIf="showcropeimage=='Sugarcane'" src="assets/icon1/sugarcane.png" alt="">
+                    <img *ngIf="showcropeimage=='Banana'" src="assets/icon1/banana.png" alt="">
+                </button>
+            </ion-col>
+        </ion-row>
+    </ion-navbar>
+</ion-header>
+<ion-content [ngClass]="{'day': imagebkg=='day','night': imagebkg=='night','suny': imagebkg=='suny','rain': imagebkg=='rain'}">
+    <span class="wrapper" style="overflow:hidden;" #wrapper>
+        <!--[ngClass]="{'snowback': isClass1Visible,'rainback': isClass2Visible}"-->
+        <ion-fab edge left top>
+            <button ion-fab mini class="fab fab-ios fab-close-active" style="color: transparent;background-color: transparent;box-shadow: none;">
+                <ion-icon class="fab-close-icon icon icon-ios ion-ios-close" name="close" role="img" aria-label="close"></ion-icon><span class="button-inner">
+                <ion-icon ios="ios-menu" md="md-menu"></ion-icon>
+                </span>
+                <div class="button-effect"></div>
+            </button>
+            <ion-fab-list  style="background: rgba(0, 0, 0, 0.5);" class="fab-list-active">
+                <!-- <button ion-fab mini class="fab fab-ios fab-in-list fab-ios-in-list show" [disabled]="autoplayk=='yes'" style="height: 25px !important;background: transparent;" [class.img-radius]="devalue=='Crop Planning'"  (click)="setFilteredItems('Crop Planning')">
+<img src="assets/home/Icon_00.png" alt="">
+</button> -->
+                <button ion-fab mini class="fab fab-ios fab-in-list fab-ios-in-list show" [disabled]="autoplayk=='yes'" style="height: 25px !important;background: transparent;" [class.img-radius]="devalue=='Planning'" (click)="setFilteredItems('Planning')">
+                    <img src="assets/home/Icon_00.png" alt="">
+                </button>
+                <button ion-fab mini class="fab fab-ios fab-in-list fab-ios-in-list show" [disabled]="autoplayk=='yes'" style="height: 25px !important;background: transparent;" [class.img-radius]="devalue=='Seedling'" (click)="setFilteredItems('Seedling')">
+                    <img src="assets/home/Icon_01.png" alt="">
+                </button>
+                <button ion-fab mini class="fab fab-ios fab-in-list fab-ios-in-list show" [disabled]="autoplayk=='yes'" style="height: 25px !important;background: transparent;" [class.img-radius]="devalue=='Early Vegetative'" (click)="setFilteredItems('Early Vegetative')">
+                    <img src="assets/home/Icon_02.png" alt="">
+                </button>
+                <button ion-fab mini class="fab fab-ios fab-in-list fab-ios-in-list show" [disabled]="autoplayk=='yes'" style="height: 25px !important;background: transparent;" [class.img-radius]="devalue=='Late Vegetative'" (click)="setFilteredItems('Late Vegetative')">
+                    <img src="assets/home/Icon_04.png" alt="">
+                </button>
+                <button ion-fab mini class="fab fab-ios fab-in-list fab-ios-in-list show" [disabled]="autoplayk=='yes'" style="height: 25px !important;background: transparent;" [class.img-radius]="devalue=='Development'" (click)="setFilteredItems('Development');">
+                    <img src="assets/home/Icon_03.png" alt="">
+                </button>
+                <button ion-fab mini class="fab fab-ios fab-in-list fab-ios-in-list show" [disabled]="autoplayk=='yes'" style="height: 25px !important;background: transparent;" [class.img-radius]="devalue=='Harvest'" (click)="setFilteredItems('Harvest');">
+                    <img src="assets/home/Icon_05.png" alt="">
+                </button>
+            </ion-fab-list>
+        </ion-fab>
+        <ion-fab edge Right top style="top: 14px !important;">
+            <button ion-fab mini class="fab fab-ios fab-close-active" style="color:transparent;background-color:transparent;box-shadow:none;">
+                <ion-icon class="fab-close-icon icon icon-ios ion-ios-close" name="close" role="img" aria-label="close"></ion-icon>
+                <span class="button-inner">
+                    <ion-icon ios="ios-menu" md="md-menu"></ion-icon>
+                </span>
+                <div class="button-effect"></div>
+            </button>
+            <ion-fab-list class="fab-list-active">
+                <button ion-fab class="fab fab-ios fab-in-list fab-ios-in-list show" (click)="weather(t)">
+                    <img src="assets/register/Weather_Icon_01.png" alt="">
+                </button>
+                <!-- <button ion-fab class="fab fab-ios fab-in-list fab-ios-in-list show" (click)="cropcalender()">
+calander
+</button> -->
+
+
+                <button *ngIf="showbtnrt" ion-fab class="fab fab-ios fab-in-list fab-ios-in-list show" (click)="playslider();">
+                    <span style="font-size: 8px;line-height:1.5;"> <span style="font-size: 12px;" ><ion-icon ios="ios-play" md="md-play"></ion-icon></span> <br></span>
+                </button>
+                <button *ngIf="!showbtnrt" ion-fab class="fab fab-ios fab-in-list fab-ios-in-list show" (click)="stopslider();">
+                    <span style="font-size: 8px;line-height:1.5;"> <span style="font-size: 12px;" ><ion-icon ios="ios-pause" md="md-pause"></ion-icon></span> <br></span>
+                </button>
+            </ion-fab-list>
+        </ion-fab>
+        <div>
+            <div class="thing-to-move">
+                <img src="{{img}}" alt="" class="crop" style="z-index:-1;">
+                <div *ngIf="one == 6" id="snow">
+                </div>
+            </div>
+        </div>
+    </span>
+    <ion-slides id="bottom_link">
+        <ion-slide class="footerbg" *ngFor="let item of items ; let i=index;" (click)="showsuggest(item,i)">
+            <div style="font-size: 12px;color: #5F5F5F !important;margin-top: -40px;" *ngIf="item.icons || indexcv==i || item.Growth=='Harvest'">
+                <img src="{{item.icons}}" style="width: 35%;"/>
+                <img *ngIf="indexcv==i" src="assets/downarrow.png" style="width: 30%; margin-top: 5px;" />
+                <img *ngIf="item.Growth=='Harvest'" src=" assets/icon3/{{showcropeimage}}.png" style="width: 30%;margin-top: 10px;" alt="">
+            </div>
+            <div style="font-size: 12px;color: #5F5F5F !important;padding-top: 2px;">
+                <span [ngClass]="{'colorred': indexcv==i,'colorred1': indexcv1==i}">
+                    {{(nd | amFromUnix) | amAdd: item.DAP : 'days'| amDateFormat:'MMM Do'}}
+                </span>
+            </div>
+        </ion-slide>
+    </ion-slides>
+</ion-content>
+<!--  (swipe)="swipeEvent($event)" npm install hammerjs hammer-timejs  -->
+
+<!--<ion-footer>
+
+</ion-footer>-->
+
+<style>
+    #snow {
+        background: none;
+        background-image: url('assets/snow/Snow_01.png'), url('assets/snow/Snow_02.png'), url('assets/snow/Snow_03.png');
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+        -webkit-animation: snow 10s linear infinite;
+        -moz-animation: snow 10s linear infinite;
+        -ms-animation: snow 10s linear infinite;
+        animation: snow 10s linear infinite;
+    }
+    #bottom_link{
+        position:absolute;                  /* added */
+        bottom:0;                           /* added */
+        left:0;                           /* added */
+    }
+
+</style>

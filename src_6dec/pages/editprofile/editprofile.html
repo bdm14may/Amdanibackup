@@ -1,0 +1,71 @@
+<ion-header>
+<!--    <button (click)="dismiss()" style="float:right; background: transparent;color: white;font-size: 20px;">
+        <ion-icon ios="ios-close" md="md-close"></ion-icon>
+    </button> -->
+</ion-header>
+
+
+<ion-content padding>
+    <ion-row *ngIf="value2">
+        <ion-col col-5>
+            <img  *ngIf="value2.Image_url" src="http://139.59.56.87/brahamdev/upload/{{value2.Image_url}}">
+            <img *ngIf="!value2.Image_url" width="80" height="80"  src="assets/avtar.png" />
+            <button ion-button  outline (click)="change(value2.Image_url);">परिवर्तन</button>
+            <button ion-button  outline (click)="uploadImage();">अपलोड</button>
+
+        </ion-col>
+        <ion-col col-7>
+            <ion-row>
+                <ion-col  col-4>नाम:</ion-col>
+                <ion-col style="text-align: left;" col-8>
+
+                    <ion-input *ngIf="value2.Name" type="text" value="{{value2.Name}}"></ion-input>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col class="cat" col-4>
+                    राज्य:</ion-col>
+                <ion-col style="text-align: left;" col-8 >
+
+                    <span *ngIf="value2.State_Name">{{value2.State_Name}}</span>,
+                </ion-col>
+            </ion-row>   
+            <ion-row>
+                <ion-col class="cat" col-4>जिला:</ion-col>
+                <ion-col style="text-align: left;" col-8 >
+
+                    <span *ngIf="value2.Dist_Name">{{value2.Dist_Name}}</span>
+
+                </ion-col>
+            </ion-row> 
+            <ion-row>
+                <ion-col class="cat" col-4>
+                    तालुका:</ion-col>
+                <ion-col style="text-align: left;" col-8 >
+
+
+                    <span *ngIf="value2.Taluka_name" >{{value2.Taluka_name}}</span>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col class="cat" col-4>
+                    गाँव:</ion-col>
+                <ion-col style="text-align: left;" col-8 >
+
+                    <span *ngIf="value2.Village_name ">{{value2.Village_name }}</span>
+
+                </ion-col>
+            </ion-row>    
+            <ion-row>
+                <ion-col class="cat" col-4>मोबाइल:</ion-col>
+                <ion-col style="text-align: left;" col-8>   
+                    <ion-input *ngIf="value2.Phone_no" type="text" value="{{value2.Phone_no}}" ></ion-input>
+
+                </ion-col>
+            </ion-row>
+
+            <button ion-button  outline (click)="Update(value2);">अद्यतन</button>
+
+        </ion-col>
+    </ion-row>
+</ion-content>

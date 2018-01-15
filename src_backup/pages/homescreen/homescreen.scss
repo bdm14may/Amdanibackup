@@ -1,0 +1,70 @@
+page-homescreen {
+    ion-content{
+          background: url(../assets/register/landscape.png) no-repeat center center fixed;
+       background-size: cover;
+        box-shadow: inset 0 0 0 500px rgba(0,62,62, 0.8);
+    }
+    .content-md {
+        color: #000;
+    }
+
+    .toolbar-background-md {
+        background-color: #172727 !important;
+    }
+    .mid-bg{
+        background: url(../assets/register/user_profile_bg.png) no-repeat;
+        background-size: 100% 100%;
+        height: 330px;
+        padding: 8%;
+        padding-top: 30px;
+    }
+    ion-col{
+        text-align: center;
+    }
+    .toggle-md .toggle-inner {
+        background: url(../assets/register/Setting_off_button.png) no-repeat !important;;
+        background-size: 100% 100% !important;
+        margin-left: -2px !important;
+    }
+    .toggle-md.toggle-checked .toggle-inner{
+        background: url(../assets/register/Setting_on_button.png) no-repeat !important;;
+        background-size: 100% 100% !important; 
+        margin-left: 10px !important;
+    }
+    .toggle-md-secondary.toggle-checked .toggle-icon {
+        background-color: transparent;
+        border: 2px solid #c6b199;
+    }
+
+    .toggle-md .toggle-icon {
+        border: 1px solid #c6b199;
+    }
+
+
+    .toggle-md .toggle-inner {
+        left: 0;
+        top: -5px;
+        border-radius: 52%;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+
+    }
+    .toggle-md {
+        position: relative;
+        width: 55px;
+        height: 23px;
+    }
+    .sound{
+        width: 80%;
+        background: transparent;
+        margin-left: 11%;
+        margin-top: 10px;
+    }
+
+    .button-md {
+        border-radius: 2px;
+        overflow: hidden;
+        height: 5.6rem !important;
+    }
+}

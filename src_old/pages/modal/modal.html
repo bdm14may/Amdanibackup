@@ -1,0 +1,43 @@
+<ion-content padding>
+<!--    <button (click)="dismiss()" style="float:right; background: transparent;color: white;font-size: 20px;">
+        <ion-icon ios="ios-close" md="md-close"></ion-icon>
+    </button>-->
+    <ion-row>
+        <ion-col col-2></ion-col>
+        <ion-col class="mid-bg" col-8>
+            <ion-row style="margin-top:10px;">
+                <ion-col>
+                    <button ion-button clear (click)="pushmydetails()">
+                        <img src="assets/FAP_Logo2.png" style="width:58%;"><br>
+                    </button> 
+                    मेरा विवरण
+                </ion-col> 
+                <ion-col>
+                    <button (click)="pushplot()" ion-button clear><img src="assets/register/plot_details_icon.png" style="width:58%;"><br>
+                    </button>
+                    प्लॉट विवरण
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <button (click)="pushcrop()" ion-button clear><img src="assets/register/Crop_detail_icon.png" style="width:58%;"><br>
+                    </button>
+                    फसल विवरण
+                </ion-col> 
+                <ion-col>
+                    <button (click)="pushweather()"  ion-button clear><img src="assets/register/weather_details_icon.png" style="width:58%;"><br>
+                    </button>
+                    मौसम का विवरण
+                </ion-col>
+            </ion-row>
+            <ion-item class="sound" >
+                <ion-label>ध्वनि </ion-label>
+                <ion-toggle [(ngModel)]="sound" (ionChange)="notify(sound)" color="secondary"></ion-toggle>
+            </ion-item>
+            <ion-col>
+                <button (click)="dismiss()" class="add-button2"  ion-button clear>खारिज</button>
+            </ion-col>
+        </ion-col>
+        <ion-col col-2></ion-col>
+    </ion-row>
+</ion-content>

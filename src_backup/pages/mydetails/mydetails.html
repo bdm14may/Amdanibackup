@@ -1,0 +1,85 @@
+
+<ion-content padding>
+ <!--   <button (click)="dismiss()" style="float:right; background: transparent;color: white;font-size: 20px;">
+        <ion-icon ios="ios-close" md="md-close"></ion-icon>
+    </button> -->
+    <ion-row>
+        <ion-col col-1></ion-col>
+        <ion-col class="mid-bg" col-10>
+            <h1 style="margin-top:10px; color:#095C9B !important;margin-bottom: 0;">मेरा विवरण</h1>
+            <span  *ngFor='let vehicle2 of (registered6 | async)'>
+                <ion-row *ngIf="vehicle2">
+                    <ion-col col-5>
+                        <span *ngIf="!imagePath1">
+                            <img  *ngIf="vehicle2.Image_url" width="100" height="120" src="http://139.59.56.87/brahamdev/upload/{{vehicle2.Image_url}}">
+                            <img *ngIf="!vehicle2.Image_url" width="100" height="120"  src="assets/avtar.png" />
+                        </span>
+                        <span *ngIf="imagePath1">
+                            <img *ngIf="imagePath1" width="80" height="80"  src="{{imagePath1}}" />
+                        </span>
+                        <ion-item class="text-center" style="height: 100px !important;background: transparent;">
+                            <button ion-button full class="add-button2" (click)="presentActionSheet()" style="height: 2.6rem !important;">
+                                चित्र चुनें</button> 
+                            <br/>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col col-7>
+                        <ion-row>
+                            <ion-col  col-4>
+                                नाम:</ion-col>
+                            <ion-col style="text-align: left;" col-8>
+                                <ion-input *ngIf="vehicle2.Name" type="text" [(ngModel)]="name" [ngModelOptions]="{standalone: true}" value="{{vehicle2.Name}}"></ion-input>
+                            </ion-col>
+                        </ion-row>
+                        <ion-row>
+                            <ion-col class="cat" col-4>
+                                राज्य:</ion-col>
+                            <ion-col style="text-align: left;" col-8 >
+                                <span *ngIf="vehicle2.State_Name">{{vehicle2.State_Name}}</span>,
+                            </ion-col>
+                        </ion-row>   
+                        <ion-row>
+                            <ion-col class="cat" col-4>
+                                जिला:</ion-col>
+                            <ion-col style="text-align: left;" col-8 >
+                                <span *ngIf="vehicle2.Dist_Name">{{vehicle2.Dist_Name}}</span>
+                            </ion-col>
+                        </ion-row> 
+                        <ion-row>
+                            <ion-col class="cat" col-4>
+                                तालुका:</ion-col>
+                            <ion-col style="text-align: left;" col-8 >
+                                <span *ngIf="vehicle2.Taluka_name" >{{vehicle2.Taluka_name}}</span>
+                            </ion-col>
+                        </ion-row>
+                        <ion-row>
+                            <ion-col class="cat" col-4>
+                                गाँव:</ion-col>
+                            <ion-col style="text-align: left;" col-8 >
+                                <span *ngIf="vehicle2.Village_name ">{{vehicle2.Village_name }}</span>
+                            </ion-col>
+                        </ion-row>    
+                        <ion-row>
+                            <ion-col class="cat" col-4>मोबाइल:</ion-col>
+                            <ion-col style="text-align: left;" col-8>   
+                                <ion-input *ngIf="vehicle2.Phone_no" type="text" value="{{vehicle2.Phone_no}}" readonly></ion-input>
+                            </ion-col>
+                        </ion-row>
+                        <button ion-button  class="add-button2" full icon-left (click)="pushpage(vehicle2,name)" [hidden]="lastImage === null || !vehicle2.Name" style="height: 2.6rem !important;width: 50%;">
+                            अद्यतन
+                        </button> 
+                    </ion-col>
+                </ion-row>
+            </span>
+            <!--
+<button ion-button style="margin-top: -5px;" clear>
+<img src="assets/register/continue_button.png" style="max-width: 50%;">
+</button>
+-->
+            <button class="add-button2" (click)="dismiss()"  ion-button >खारिज</button>
+        </ion-col>
+        <ion-col col-1></ion-col>
+
+    </ion-row>
+
+</ion-content>

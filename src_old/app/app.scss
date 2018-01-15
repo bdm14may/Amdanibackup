@@ -1,0 +1,108 @@
+.no-scroll .scroll-content {
+    overflow: hidden;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+@font-face {
+    font-family: Hobo-Std-Medium;
+    src: url("../assets/Hobo-Std-Medium_22891.ttf") format("truetype"), /* Safari, Android, iOS */
+
+}
+
+ion-app.md {
+    font-family: Hobo-Std-Medium;
+}
+
+ion-app.ios {
+    font-family: Hobo-Std-Medium;
+}
+
+.item-md.item-block .item-inner {
+    padding-right: 8px;
+    border-bottom: none !important;
+    box-shadow: none;
+}
+
+.item-md.item-input.item-input-has-focus.item-inner,
+.item-md.item-input.input-has-focus.item-inner {
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+
+.toolbar-background-md {
+    border-color: #b2b2b2;
+    background: transparent;
+}
+
+.alert-md .alert-wrapper {
+    border-radius: 10px !important;
+}
+
+.fixed-content {
+    margin-top: 50px !important;
+}
+
+
+.scroll-content {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+.alert-md .alert-button-group {
+    padding: 0px 8px 8px 13px !important;
+}
+.alert-md .alert-head {
+    text-align: left;
+    text-align: start;
+    padding: 10px 15px 10px  !important;
+}
+.alert-md .alert-wrapper {
+    max-width: 350px;
+    border-radius: 10px !important;
+    margin-top: -5%  !important;
+    background: url(../assets/register/user_profile_bg.png);
+    background-size: 100% 100%;
+    padding: 20px 22px;
+    box-shadow: none;
+}
+.alert-md .alert-button {
+    text-align: right;
+    text-align: end;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    background-color: transparent;
+    margin: 0 8px 0 0;
+    padding: 10px;
+    background: url(../assets/register/weather_orange_button.png) no-repeat;
+    background-size: 100% 100%;
+}
+.toast-md .toast-wrapper {
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    z-index: 10;
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    background: #333;
+    opacity: .7 !important;
+}
+.toast-md .toast-message {
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 11px 15px 14px;
+    text-align: center;
+}
+
+.toast-md .toast-wrapper.toast-middle {
+    margin-top: 12% !important;
+}

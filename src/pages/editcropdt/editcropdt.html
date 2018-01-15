@@ -1,0 +1,54 @@
+<ion-content padding>
+    
+      <ion-row *ngIf="trfe">
+         
+          <ion-col class="mid-bg" col-12>
+         
+          <ion-row >
+              <ion-col col-4 >
+                  <ion-label>{{trfe.crop}}</ion-label>
+                  <ion-select style="max-width: 51% !important;"  [(ngModel)]="Crop_name" [ngModelOptions]="{standalone: true}">
+                      <ion-option *ngFor="let tal of ecrope" [value]="tal.Name">{{tal.Name}}</ion-option>
+                  </ion-select>
+              </ion-col>
+              <ion-col col-4 >
+                  <ion-label>{{trfe.variety_name}}</ion-label>
+                  <ion-select style="max-width: 51% !important;"  [(ngModel)]="Variety_Name" [ngModelOptions]="{standalone: true}">
+                      <ion-option *ngFor="let tal of variety" [value]="tal.Value">{{tal.Value}}</ion-option>
+                  </ion-select>
+              </ion-col>
+              <ion-col col-4 >
+                  <ion-label>{{trfe.Irrigation_type}}</ion-label>
+                  <ion-select style="max-width: 51% !important;"  [(ngModel)]="Irrigation_type" [ngModelOptions]="{standalone: true}">
+                      <ion-option *ngFor="let tal of irrigation" [value]="tal.Value">{{tal.Value}}</ion-option>
+                  </ion-select>
+              </ion-col>
+   
+                 
+          </ion-row>
+          <ion-row>
+              <ion-col col-6 *ngIf="soil">
+                  <ion-label>{{trfe.Types_of_soil}}</ion-label>
+                  <ion-select  style="max-width: 51% !important;" [(ngModel)]="Soil1" [ngModelOptions]="{standalone: true}">
+                      <ion-option *ngFor="let tal1 of soil" [value]="tal1.Value">{{tal1.Value}}</ion-option>
+                  </ion-select>
+              </ion-col>
+
+      <ion-col col-6>
+          <ion-label>{{trfe.sowing_date}}</ion-label>
+          <input type="date"  class="select-md select-icon select-box1 " min="2016-12-31" max="2018-12-31" value="{{Sowing_date}}"  [(ngModel)]="Sowing_date">
+      </ion-col>
+          </ion-row>
+  <br>
+  <ion-row style="margin-left: 24%;">
+    
+    <ion-col col-8 *ngIf="trfe">
+        <button class="add-button2" ion-button [disabled]="!Crop_name"  (click)="submitval()" color="secondary">{{trfe.save}}</button>
+             <button class="add-button2" (click)="dismiss1()" ion-button>{{trfe.Dismiss}}</button>
+    </ion-col>
+  </ion-row>
+  </ion-col>
+  </ion-row>
+  
+  </ion-content>
+  

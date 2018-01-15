@@ -1,0 +1,32 @@
+﻿import {
+    Reducer,
+    combineReducers
+} from 'redux';
+import {
+    counterReducer,
+    UsersState
+
+} from '../reducer/counter.reducer';
+export * from '../reducer/counter.reducer';
+import {
+    userReducer,
+    UsersStateu,
+    getUsersStatee,
+    getCurrentUsere
+
+} from '../reducer/user.reducer';
+export * from '../reducer/user.reducer';
+
+
+export interface AppState1 {
+    users: UsersState;
+    user1: UsersStateu
+}
+
+const rootReducer: Reducer<AppState1> = combineReducers<AppState1>({
+    users: counterReducer,
+    user1: userReducer
+   
+});
+
+export default rootReducer;

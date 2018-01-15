@@ -1,0 +1,57 @@
+
+
+<ion-content padding>
+    <ion-row *ngIf="trfe">
+        <ion-col col-2></ion-col>
+        <ion-col class="mid-bg" col-8>
+
+            <ion-row style="margin-top:10px;" >
+                <ion-col>
+                    <button ion-button clear (click)="pushmydetails()">
+                        <img src="assets/FAP_Logo2.png" style="width:58%;"><br>
+                    </button> 
+                    {{trfe.my_profile}}
+                </ion-col> 
+                <ion-col>
+                    <button (click)="pushplot()" ion-button clear><img src="assets/register/plot_details_icon.png" style="width:58%;"><br>
+                    </button>
+                   {{trfe.plot_details}}
+                </ion-col>
+            </ion-row>
+
+
+            <ion-row>
+                <ion-col>
+                    <button (click)="pushcrop()" ion-button clear><img src="assets/register/Crop_detail_icon.png" style="width:58%;"><br>
+                    </button>
+                    {{trfe.crop_details}}
+                </ion-col> 
+                <ion-col>
+                    <button (click)="pushweather()"  ion-button clear><img src="assets/register/weather_details_icon.png" style="width:58%;"><br>
+                    </button>
+                    {{trfe.weather_details}}
+                </ion-col>
+            </ion-row>
+            <ion-item style="background: transparent !important;">
+                <ion-label>{{trfe.Language}}:</ion-label>
+            <ion-select style="max-width: 51% !important;" [(ngModel)]="language" [ngModelOptions]="{standalone: true}">
+                   <ion-option *ngFor="let vil of language1" [value]="vil.name" >{{vil.name}}</ion-option>
+               </ion-select> 
+              
+           </ion-item>
+           <ion-col>
+            <button (click)="save()" class="add-button2"  ion-button clear>{{trfe.save}}</button>
+        </ion-col>
+           
+
+            <ion-item class="sound" >
+                <ion-label> {{trfe.sound}} </ion-label>
+                <ion-toggle [(ngModel)]="sound" (ionChange)="notify(sound)" color="secondary"></ion-toggle>
+            </ion-item>
+
+
+
+        </ion-col>
+        <ion-col col-2></ion-col>
+    </ion-row>
+</ion-content>
